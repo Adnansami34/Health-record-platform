@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Health Record Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F8F7;--surface:#FFFFFF;--ink:#16292B;--muted:#566B6D;--line:#D5DEDC;--accent:#0F5257;--accent-ink:#FFFFFF;--alert:#B8322A;--alert-bg:#FCEDEB;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0E1A1C;--surface:#152427;--ink:#E6EFEE;--muted:#93A8A9;--line:#27393C;--accent:#5FB6B8;--accent-ink:#0E1A1C;--alert:#FF8A80;--alert-bg:#3A1C1A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1A1C;--surface:#152427;--ink:#E6EFEE;--muted:#93A8A9;--line:#27393C;--accent:#5FB6B8;--accent-ink:#0E1A1C;--alert:#FF8A80;--alert-bg:#3A1C1A;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,-apple-system,Tahoma,sans-serif;line-height:1.6;font-size:16px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:20px}
+h1{font-size:1.5rem;margin:0;font-weight:600}
+.sub{color:var(--muted);font-size:.9rem;margin:2px 0 0}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.lang{border:1px solid var(--line);background:var(--surface);padding:6px 14px;border-radius:999px;white-space:nowrap}
+.pts{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:16px}
+.pt{border:1px solid var(--line);background:var(--surface);padding:8px 14px;border-radius:10px;white-space:nowrap}
+.pt[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.tabs{display:flex;border-bottom:1px solid var(--line);margin-bottom:18px}
+.tab{background:none;border:0;border-bottom:3px solid transparent;padding:10px 16px;color:var(--muted)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+.tab.em[aria-selected="true"]{border-bottom-color:var(--alert)}
+.id{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:18px}
+.id div{min-width:90px}
+.k{font-size:.8rem;color:var(--muted)}
+.v{font-size:1.1rem;font-weight:600}
+section{margin-bottom:20px}
+h2{font-size:1rem;margin:0 0 6px;font-weight:600}
+ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+li{padding:9px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px}
+li span:last-child{color:var(--muted);font-size:.9rem}
+.none{color:var(--muted);padding:9px 0}
+.wrist{background:var(--alert-bg);border:2px solid var(--alert);border-radius:14px;padding:18px}
+.wrist h2{color:var(--alert);font-size:1.15rem}
+.wrist ul,.wrist li{border-color:var(--alert)}
+.note{color:var(--muted);font-size:.9rem;margin:10px 0 0}
+.log{margin-top:18px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div><h1 id="title"></h1><p class="sub" id="sub"></p></div>
+<button class="lang" id="lang"></button>
+</header>
+<div class="pts" id="pts" role="group"></div>
+<div class="tabs" role="tablist" id="tabs"></div>
+<main id="panel"></main>
+</div>
+<script>
+var L={
+en:{title:"Health Record Prototype",sub:"Synthetic data only. Not for real patients.",lang:"العربية",record:"Record",emergency:"Emergency",summary:"Summary",age:"Age",blood:"Blood group",years:"years",cond:"Conditions",allergy:"Allergies",meds:"Medicines",visits:"Visits",since:"since",none:"None recorded",
+emTitle:"Critical information only",emNote:"For doctors treating a patient who cannot speak. Every access is logged.",hidden:"Hidden in this view: visit history, reports, contact details.",log:"Access log",logEmpty:"Emergency view not opened yet.",logRow:"Emergency view opened for ",
+sumTitle:"Plain-language summary",sumNote:"Template-based demo. An AI-generated summary comes next."},
+ar:{title:"نموذج السجل الصحي",sub:"بيانات تجريبية فقط. غير مخصص لمرضى حقيقيين.",lang:"English",record:"السجل",emergency:"الطوارئ",summary:"الملخص",age:"العمر",blood:"فصيلة الدم",years:"سنة",cond:"الحالات المزمنة",allergy:"الحساسية",meds:"الأدوية",visits:"الزيارات",since:"منذ",none:"لا يوجد",
+emTitle:"معلومات حرجة فقط",emNote:"للأطباء الذين يعالجون مريضاً غير قادر على التحدث. يُسجَّل كل وصول.",hidden:"مخفي في هذا العرض: سجل الزيارات والتقارير وبيانات الاتصال.",log:"سجل الوصول",logEmpty:"لم يُفتح عرض الطوارئ بعد.",logRow:"فُتح عرض الطوارئ لـ ",
+sumTitle:"ملخص بلغة بسيطة",sumNote:"ملخص تجريبي مبني على قالب. سيحل محله ملخص بالذكاء الاصطناعي لاحقاً."}};
+var P=[
+{name:{en:"Layla Hassan",ar:"ليلى حسن"},age:54,blood:"O+",
+cond:[{en:"Type 2 diabetes",ar:"السكري من النوع الثاني",s:2016},{en:"Hypertension",ar:"ارتفاع ضغط الدم",s:2019}],
+allergy:[{en:"Penicillin (severe reaction)",ar:"البنسلين (تفاعل شديد)"}],
+meds:[{en:"Metformin 500 mg, twice daily",ar:"ميتفورمين 500 ملغ، مرتين يومياً"},{en:"Amlodipine 5 mg, once daily",ar:"أملوديبين 5 ملغ، مرة يومياً"}],
+visits:[{d:"2026-08-14",en:"Diabetes follow-up",ar:"متابعة السكري"},{d:"2026-03-02",en:"Routine blood tests",ar:"فحوصات دم روتينية"}]},
+{name:{en:"Omar Khalid",ar:"عمر خالد"},age:38,blood:"A+",
+cond:[{en:"Asthma",ar:"الربو",s:2011}],
+allergy:[{en:"Peanuts (risk of severe reaction)",ar:"الفول السوداني (خطر تفاعل شديد)"}],
+meds:[{en:"Salbutamol inhaler, as needed",ar:"بخاخ سالبوتامول عند الحاجة"}],
+visits:[{d:"2026-06-21",en:"Asthma review",ar:"مراجعة الربو"},{d:"2025-11-10",en:"Flu vaccination",ar:"تطعيم الإنفلونزا"}]},
+{name:{en:"Sara Ahmed",ar:"سارة أحمد"},age:29,blood:"B+",
+cond:[{en:"Iron-deficiency anemia",ar:"فقر الدم بنقص الحديد",s:2025}],
+allergy:[],
+meds:[{en:"Ferrous sulfate 200 mg, once daily",ar:"كبريتات الحديدوز 200 ملغ، مرة يومياً"}],
+visits:[{d:"2026-09-05",en:"Blood count check",ar:"فحص تعداد الدم"},{d:"2026-01-18",en:"General check-up",ar:"فحص عام"}]}
+];
+var S={lang:"en",pid:0,tab:"record",log:[]};
+var $=function(i){return document.getElementById(i)};
+function t(){return L[S.lang]}
+function list(items,fn){
+  if(!items.length)return '<div class="none">'+t().none+'</div>';
+  return '<ul>'+items.map(fn).join('')+'</ul>';
+}
+function logAccess(){S.log.unshift({time:new Date(),pid:S.pid});S.log=S.log.slice(0,5)}
+function render(){
+  var T=t(),p=P[S.pid],lg=S.lang;
+  document.documentElement.lang=lg;document.documentElement.dir=lg==="ar"?"rtl":"ltr";
+  $("title").textContent=T.title;$("sub").textContent=T.sub;$("lang").textContent=T.lang;
+  $("pts").innerHTML=P.map(function(x,i){return '<button class="pt" data-p="'+i+'" aria-pressed="'+(i===S.pid)+'">'+x.name[lg]+'</button>'}).join('');
+  var tabs=[["record",T.record,""],["emergency",T.emergency," em"],["summary",T.summary,""]];
+  $("tabs").innerHTML=tabs.map(function(x){return '<button class="tab'+x[2]+'" role="tab" data-t="'+x[0]+'" aria-selected="'+(S.tab===x[0])+'">'+x[1]+'</button>'}).join('');
+  var h='';
+  var ident='<div class="id"><div><div class="k">'+T.age+'</div><div class="v">'+p.age+' '+T.years+'</div></div><div><div class="k">'+T.blood+'</div><div class="v" dir="ltr">'+p.blood+'</div></div></div>';
+  var condFn=function(c){return '<li><span>'+c[lg]+'</span><span>'+T.since+' '+c.s+'</span></li>'};
+  var oneFn=function(a){return '<li><span>'+a[lg]+'</span></li>'};
+  if(S.tab==="record"){
+    h=ident+'<section><h2>'+T.cond+'</h2>'+list(p.cond,condFn)+'</section>'
+     +'<section><h2>'+T.allergy+'</h2>'+list(p.allergy,oneFn)+'</section>'
+     +'<section><h2>'+T.meds+'</h2>'+list(p.meds,oneFn)+'</section>'
+     +'<section><h2>'+T.visits+'</h2>'+list(p.visits,function(v){return '<li><span>'+v[lg]+'</span><span dir="ltr">'+v.d+'</span></li>'})+'</section>';
+  }else if(S.tab==="emergency"){
+    h='<div class="wrist"><h2>'+T.emTitle+'</h2>'+ident
+     +'<section><h2>'+T.allergy+'</h2>'+list(p.allergy,oneFn)+'</section>'
+     +'<section><h2>'+T.cond+'</h2>'+list(p.cond,function(c){return '<li><span>'+c[lg]+'</span></li>'})+'</section>'
+     +'<section><h2>'+T.meds+'</h2>'+list(p.meds,oneFn)+'</section></div>'
+     +'<p class="note">'+T.emNote+' '+T.hidden+'</p>'
+     +'<div class="log"><h2>'+T.log+'</h2>'
+     +(S.log.length?'<ul>'+S.log.map(function(e){return '<li><span>'+T.logRow+P[e.pid].name[lg]+'</span><span dir="ltr">'+e.time.toLocaleTimeString(lg==="ar"?"ar-QA":"en-GB",{hour:"2-digit",minute:"2-digit",second:"2-digit"})+'</span></li>'}).join('')+'</ul>':'<div class="none">'+T.logEmpty+'</div>')+'</div>';
+  }else{
+    var j=function(a){return a.length?a.map(function(x){return x[lg]}).join(lg==="ar"?"، ":", "):T.none};
+    var v=p.visits[0],txt;
+    if(lg==="en"){txt=p.name.en+" is "+p.age+" years old with blood group "+p.blood+". Conditions: "+j(p.cond)+". Allergies: "+j(p.allergy)+". Current medicines: "+j(p.meds)+". Last visit: "+v.d+", "+v.en.toLowerCase()+"."}
+    else{txt=p.name.ar+"، العمر "+p.age+" سنة، وفصيلة الدم "+p.blood+". الحالات المزمنة: "+j(p.cond)+". الحساسية: "+j(p.allergy)+". الأدوية الحالية: "+j(p.meds)+". آخر زيارة: "+v.d+"، "+v.ar+"."}
+    h='<div class="box"><h2>'+T.sumTitle+'</h2><p>'+txt+'</p><p class="note">'+T.sumNote+'</p></div>';
+  }
+  $("panel").innerHTML=h;
+}
+document.addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b)return;
+  if(b.id==="lang"){S.lang=S.lang==="en"?"ar":"en"}
+  else if(b.dataset.p!==undefined){S.pid=+b.dataset.p;if(S.tab==="emergency")logAccess()}
+  else if(b.dataset.t){S.tab=b.dataset.t;if(S.tab==="emergency")logAccess()}
+  else return;
+  render();
+});
+render();
+</script>
+</body>
+</html>
