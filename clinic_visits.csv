@@ -1,0 +1,613 @@
+visit_id,patient_id,patient_name,date_of_birth,gender,blood_group,visit_date,diagnosis,diagnosis_code,allergy,medication,clinic
+V00199,P0088,Fatima Rahman,2004-12-18,m,AB-,29-01-2026,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00314,P0038,Mariam Mansour,01-01-1988,m,AB-,2022/09/20 10:30:00,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,West Bay Medical Center
+V00104,P0089,Amina Rahman,1973/04/03 10:30:00,Female,O+,2026/06/21 10:30:00,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Doha Care Clinic
+V00194,P0009,Sara Haddad,28-06-2005,female,B-,20-07-2023,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,Al Wakra Family Clinic
+V00201,P0058,Yousef Al Sulaiti,12-04-1975,Female,O-,07-04-2025,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00503,P0116,Ibrahim Rahman,14-02-2001,m,O-,27-08-2026,Hypertension,I10,None,Amlodipine 5 mg,Doha Care Clinic
+V00429,P0021,Khalid Khalid,17/04/2006,Male,AB+,2026/07/25 10:30:00,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Al Wakra Family Clinic
+V00421,P0048,Amina Farouk,1997/08/25 10:30:00,Male,A+,2024/10/05 10:30:00,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00523,P0072,Layla Al Naimi,1959-09-23,m,O-,2023/03/03 10:30:00,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00453,P0051,Fatima Al Sulaiti,1968-04-29,female,B-,28-03-2022,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00465,P0023,Mohammed Haddad,11-04-1960,male,O-,2026-03-09,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00131,P0020,Ibrahim Khalid,18/09/1995,f,A-,2023/11/03 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00223,P0111,Mariam Haddad,31/03/1983,F,O-,07/12/2025,Common cold,J06.9,None,Paracetamol 500 mg,Doha Care Clinic
+V00266,P0079,Mohammed Al Sulaiti,28/09/1975,Female,AB+,2025/08/18 10:30:00,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00233,P0113,Huda Karim,23/09/1963,m,,23/02/2024,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,West Bay Medical Center
+V00085,P0099,Yousef Nasser,02/12/1997,M,AB+,09/04/2023,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Doha Care Clinic
+V00333,P0110,Sara Haddad,13/11/2003,F,A+,2023/11/05 10:30:00,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00450,P0032,Huda Hassan,1972-03-29,Female,A-,12-02-2023,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00120,P0099,Yousef Nasser,1997/12/02 10:30:00,M,AB+,26/08/2025,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,West Bay Medical Center
+V00195,P0081,Amina Karim,23/03/1965,F,O+,2024-07-26,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Doha Care Clinic
+V00159,P0018,Huda Khalid,06-10-1973,Male,B-,06-02-2024,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Al Wakra Family Clinic
+V00409,P0052,Noor Khalid,2010/04/05 10:30:00,male,AB-,2025-12-28,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00383,P0094,Fatima Farouk,1991-10-20,m,A+,2026-10-06,Type 2 diabetes,E11.9,None,Metformin 500 mg,West Bay Medical Center
+V00209,P0056,Sara Nasser,2008-09-02,M,O+,19/02/2026,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00187,P0097,Ibrahim Rahman,08/09/1969,male,AB+,2026-06-07,Common cold,J06.9,Penicillin,Paracetamol 500 mg,West Bay Medical Center
+V00250,P0103,Layla Hassan,1992-03-12,M,A+,2024-04-01,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00273,P0078,Mariam Haddad,1984-01-06,Male,O+,14-12-2024,Hypertension,I10,Penicillin,Amlodipine 5 mg,Doha Care Clinic
+V00568,P0082,Fatima Hassan,1971-01-27,male,B-,26/06/2022,Type 2 diabetes,E11.9,None,Metformin 500 mg,Al Wakra Family Clinic
+V00254,P0063,Yousef Saleh,08/06/1961,M,O+,2025/12/28 10:30:00,Type 2 diabetes,E11.9,None,Metformin 500 mg,Doha Care Clinic
+V00023,P0059,Layla Farouk,30/10/1993,male,A+,25/02/2024,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00431,P0074,Hassan Al Sulaiti,25/12/1953,m,A+,2026/05/18 10:30:00,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Al Wakra Family Clinic
+V00255,P0115,Layla Mansour,10-01-1972,F,O+,2026-03-12,Asthma,J45.909,Penicillin,Salbutamol inhaler,West Bay Medical Center
+V00010,P0071,Fatima Al Naimi,07/05/1960,male,B+,06-01-2022,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Al Wakra Family Clinic
+V00261,P0034,Omar Karim,2006-08-14,M,B-,08-04-2024,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00371,P0058,Yousef Al Sulaiti,2031-05-01,Female,O-,2024/06/05 10:30:00,Common cold,J06.9,None,Paracetamol 500 mg,Doha Care Clinic
+V00328,P0054,Hassan Farouk,1973-10-17,Male,O-,2023-08-02,Type 2 diabetes,E11.9,None,Metformin 500 mg,Doha Care Clinic
+V00077,P0076,Fatima Haddad,1961/03/07 10:30:00,male,O+,2024-11-05,Type 2 diabetes,,Sulfa drugs,Metformin 500 mg,Al Wakra Family Clinic
+V00026,P0112,Mariam Rahman,21/06/1959,m,O-,17-03-2025,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,Doha Care Clinic
+V00334,P0044,Amina Ahmed,1985-12-24,M,B+,31-03-2024,Hypertension,I10,Penicillin,Amlodipine 5 mg,Al Wakra Family Clinic
+V00493,P0091,Sara Ahmed,18/05/1974,female,O-,30/05/2024,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,West Bay Medical Center
+V00426,P0074,Hassan Al Sulaiti,25/12/1953,m,A+,2026-07-26,Common cold,J06.9,Peanuts,Paracetamol 500 mg,West Bay Medical Center
+V00127,P0084,Omar Rahman,08-03-1987,Female,AB+,2023-08-09,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Doha Care Clinic
+V00257,P0107,Layla Mansour,1965/01/20 10:30:00,F,B+,14-10-2023,Common cold,J06.9,None,Paracetamol 500 mg,Al Wakra Family Clinic
+V00222,P0038,Mariam Mansour,1988/01/01 10:30:00,m,AB-,2026-10-24,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Doha Care Clinic
+V00521,P0025,Layla Farouk,1966/01/11 10:30:00,F,O+,09-10-2025,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Al Wakra Family Clinic
+V00537,P0113,Huda Karim,23-09-1963,m,B+,2024-09-25,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Doha Care Clinic
+V00398,P0088,Fatima Rahman,18/12/2004,m,AB-,2025-05-25,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00173,P0069,Ibrahim Ahmed,1952/02/15 10:30:00,Female,AB+,2023/09/24 10:30:00,Common cold,J06.9,None,Paracetamol 500 mg,Al Wakra Family Clinic
+V00461,P0074,Hassan Al Sulaiti,25-12-1953,m,A+,09-09-2025,Common cold,J06.9,Peanuts,Paracetamol 500 mg,West Bay Medical Center
+V00364,P0009,Sara Haddad,28/06/2005,female,B-,01-05-2024,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Doha Care Clinic
+V00435,P0003,Mohammed Hassan,13/08/1969,Female,A+,2025/09/17 10:30:00,Hypertension,I10,Peanuts,Amlodipine 5 mg,West Bay Medical Center
+V00318,P0026,Hassan Khalid,19-07-1983,Male,A+,12-03-2025,Asthma,J45.909,Peanuts,Salbutamol inhaler,Doha Care Clinic
+V00457,P0045,Mohammed Saleh,17-10-1973,f,O+,18/07/2023,Asthma,J45.909,Penicillin,Salbutamol inhaler,Doha Care Clinic
+V00287,P0038,Mariam Mansour,01-01-1988,m,AB-,2023-02-13,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Doha Care Clinic
+V00044,P0042,Ibrahim Hassan,03/10/1989,F,A+,2025-08-19,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,West Bay Medical Center
+V00151,P0093,Yousef Karim,1969-03-12,F,AB+,2023/06/20 10:30:00,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,West Bay Medical Center
+V00130,P0019,Layla Karim,12-06-2002,m,AB+,2024-10-21,Hypertension,I10,None,Amlodipine 5 mg,Doha Care Clinic
+V00039,P0005,Layla Al Naimi,1964/04/28 10:30:00,m,O-,08/02/2026,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00298,P0051,Fatima Al Sulaiti,29/04/1968,female,B-,11-04-2022,Asthma,,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00589,P0031,Hassan Karim,1977-12-19,m,O-,06/05/2025,Hypertension,I10,Penicillin,Amlodipine 5 mg,West Bay Medical Center
+V00485,P0007,Khalid Mansour,1980-11-09,male,A+,17-05-2022,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,West Bay Medical Center
+V00128,P0047,Ahmed Karim,19-02-1978,M,A+,15/04/2022,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Al Wakra Family Clinic
+V00340,P0083,Yousef Al Naimi,23-02-1954,Female,AB-,11-10-2026,Hypertension,I10,Peanuts,Amlodipine 5 mg,Doha Care Clinic
+V00232,P0111,Mariam Haddad,31/03/1983,F,O-,2024-09-05,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00445,P0009,Sara Haddad,28/06/2005,female,B-,2023-08-17,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,West Bay Medical Center
+V00006,P0061,Layla Khalid,22-08-1989,m,A+,29/11/2023,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00099,P0045,Mohammed Saleh,1973-10-17,f,O+,2026/04/30 10:30:00,Hypertension,I10,Penicillin,Amlodipine 5 mg,Doha Care Clinic
+V00089,P0087,Ibrahim Hassan,14-12-1990,Male,AB-,2024/08/03 10:30:00,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00415,P0073,Fatima Saleh,21/05/2004,F,AB+,2026/04/01 10:30:00,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00422,P0097,Ibrahim Rahman,08/09/1969,male,AB+,21-04-2022,High cholesterol,,Penicillin,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00067,P0054,Hassan Farouk,17/10/1973,Male,O-,2026-03-27,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00167,P0083,Yousef Al Naimi,23-02-1954,Female,AB-,2026/05/29 10:30:00,Common cold,J06.9,Peanuts,Paracetamol 500 mg,West Bay Medical Center
+V00560,P0019,Layla Karim,12/06/2002,m,AB+,12-09-2026,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00524,P0049,Omar Khalid,24/02/1956,F,B-,15-03-2025,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Doha Care Clinic
+V00041,P0096,Mohammed Mansour,1976-10-15,m,AB+,2024-08-17,Asthma,J45.909,Peanuts,Salbutamol inhaler,Doha Care Clinic
+V00271,P0109,Hassan Hassan,13/02/2003,Female,A-,2023/04/30 10:30:00,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,West Bay Medical Center
+V00359,P0002,Khalid Haddad,1998/12/05 10:30:00,F,AB+,20-02-2023,Common cold,J06.9,None,Paracetamol 500 mg,Doha Care Clinic
+V00251,P0059,Layla Farouk,1993/10/30 10:30:00,male,A+,2023/02/15 10:30:00,Type 2 diabetes,E11.9,None,Metformin 500 mg,West Bay Medical Center
+V00066,P0007,Khalid Mansour,09/11/1980,male,A+,2026-03-26,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,West Bay Medical Center
+V00358,P0090,Amina Haddad,1971-06-19,male,AB-,21-02-2024,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00055,P0116,Ibrahim Rahman,2001/02/14 10:30:00,m,O-,30/05/2025,Type 2 diabetes,E11.9,None,Metformin 500 mg,Doha Care Clinic
+V00335,P0084,Omar Rahman,1987-03-08,Female,AB+,2022-09-29,Hypertension,I10,Penicillin,Amlodipine 5 mg,Doha Care Clinic
+V00268,P0046,Amina Khalid,14-01-1967,male,o+,2023/12/06 10:30:00,Iron-deficiency anemia,,None,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00087,P0099,Yousef Nasser,02/12/1997,M,AB+,16-01-2026,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Doha Care Clinic
+V00265,P0004,Hassan Karim,21-04-2008,m,B-,2022/12/20 10:30:00,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Doha Care Clinic
+V00162,P0059,Layla Farouk,30/10/1993,male,A+,19/07/2023,Asthma,,None,Salbutamol inhaler,West Bay Medical Center
+V00513,P0085,Noor Ahmed,29/03/1963,M,A-,2024/07/21 10:30:00,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Doha Care Clinic
+V00339,P0032,Huda Hassan,1972/03/29 10:30:00,Female,A-,21-09-2025,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00587,P0081,Amina Karim,2031-05-01,F,O+,12/05/2026,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Doha Care Clinic
+V00061,P0065,Mariam Nasser,13/11/1963,Female,B+,06-09-2025,Hypertension,I10,None,Amlodipine 5 mg,Doha Care Clinic
+V00440,P0069,Ibrahim Ahmed,1952/02/15 10:30:00,Female,AB+,13/09/2024,Asthma,J45.909,None,Salbutamol inhaler,Doha Care Clinic
+V00102,P0061,Layla Khalid,1989-08-22,m,A+,23/03/2026,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00555,P0074,Hassan Al Sulaiti,1953/12/25 10:30:00,m,A+,2024/05/12 10:30:00,Common cold,,Peanuts,Paracetamol 500 mg,Al Wakra Family Clinic
+V00345,P0092,Omar Khalid,1963-07-14,Female,AB+,19/07/2022,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Doha Care Clinic
+V00001,P0012,Aisha Khalid,19/03/1983,female,B-,08/04/2024,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Al Wakra Family Clinic
+V00558,P0036,Amina Ahmed,1998/05/18 10:30:00,Male,AB-,2022-01-30,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00510,P0031,Hassan Karim,19-12-1977,m,O-,18-07-2024,Hypertension,I10,Penicillin,Amlodipine 5 mg,Al Wakra Family Clinic
+V00289,P0049,Omar Khalid,24/02/1956,F,B-,2024-07-01,Asthma,J45.909,Penicillin,Salbutamol inhaler,Al Wakra Family Clinic
+V00160,P0085,Noor Ahmed,29/03/1963,M,A-,2025/08/31 10:30:00,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,Doha Care Clinic
+V00367,P0037,Amina Saleh,1967/01/31 10:30:00,F,A-,19-11-2024,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Al Wakra Family Clinic
+V00241,P0011,Ibrahim Hassan,07/02/1984,male,AB-,13/07/2026,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,West Bay Medical Center
+V00145,P0074,Hassan Al Sulaiti,1953-12-25,m,A+,25-12-2022,Hypertension,,Peanuts,Amlodipine 5 mg,Doha Care Clinic
+V00468,P0073,Fatima Saleh,21/05/2004,F,AB+,2024/02/08 10:30:00,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00282,P0013,Layla Karim,20/02/2008,F,B+,30-11-2022,Iron-deficiency anemia,,Peanuts,Ferrous sulfate 200 mg,Doha Care Clinic
+V00098,P0047,Ahmed Karim,1978-02-19,M,unknown,10-03-2024,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Doha Care Clinic
+V00175,P0038,Mariam Mansour,01/01/1988,m,AB-,07/11/2023,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,Al Wakra Family Clinic
+V00105,P0070,Layla Hassan,1975/01/16 10:30:00,female,AB+,2022-07-30,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Al Wakra Family Clinic
+V00240,P0065,Mariam Nasser,13-11-1963,Female,B+,17-05-2024,Asthma,J45.909,None,Salbutamol inhaler,Doha Care Clinic
+V00337,P0017,Fatima Ahmed,20-10-2008,f,AB+,20-08-2022,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00203,P0083,Yousef Al Naimi,23-02-1954,Female,AB-,2026/03/22 10:30:00,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Al Wakra Family Clinic
+V00116,P0058,Yousef Al Sulaiti,1975/04/12 10:30:00,Female,O-,20/09/2022,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00264,P0012,Aisha Khalid,1983-03-19,female,B-,29-03-2022,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Doha Care Clinic
+V00189,P0071,Fatima Al Naimi,07-05-1960,male,B+,16-01-2023,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Doha Care Clinic
+V00444,P0055,Ibrahim Mansour,27/07/1975,Male,AB-,2024/11/24 10:30:00,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Al Wakra Family Clinic
+V00501,P0032,Huda Hassan,29-03-1972,Female,A-,2026-02-14,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00139,P0037,Amina Saleh,31/01/1967,F,A-,14-11-2025,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Al Wakra Family Clinic
+V00110,P0051,Fatima Al Sulaiti,1968/04/29 10:30:00,female,B-,2023-05-27,Asthma,J45.909,None,Salbutamol inhaler,Doha Care Clinic
+V00323,P0038,Mariam Mansour,1988/01/01 10:30:00,m,AB-,07/06/2024,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00305,P0037,Amina Saleh,31-01-1967,F,A-,12/04/2022,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,West Bay Medical Center
+V00594,P0010,Omar Al Naimi,29-04-2009,Female,O+,2025/04/28 10:30:00,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00396,P0053,Omar Al Naimi,12/02/1991,F,A-,16/06/2026,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,West Bay Medical Center
+V00171,P0076,Fatima Haddad,07/03/1961,male,O+,08/09/2024,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Al Wakra Family Clinic
+V00141,P0057,Khalid Khalid,1973/09/23 10:30:00,F,A-,11-03-2026,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Doha Care Clinic
+V00349,P0068,Amina Ahmed,1967-11-27,f,O-,07-02-2025,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00520,P0042,Ibrahim Hassan,1989-10-03,F,A+,2025/11/05 10:30:00,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Al Wakra Family Clinic
+V00019,P0106,Amina Haddad,06-04-1960,Female,AB-,2024-04-26,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00138,P0089,Amina Rahman,03-04-1973,Female,O+,29/01/2023,Asthma,J45.909,Peanuts,Salbutamol inhaler,Al Wakra Family Clinic
+V00236,P0077,Mariam Mansour,1986/02/06 10:30:00,male,B+,2026-05-15,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00385,,Huda Khalid,1973-10-06,Male,B-,2024/03/23 10:30:00,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,West Bay Medical Center
+V00153,P0018,Huda Khalid,06/10/1973,Male,B-,2024/07/20 10:30:00,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00052,P0003,Mohammed Hassan,1969/08/13 10:30:00,Female,A+,18/04/2022,Hypertension,I10,Peanuts,Amlodipine 5 mg,West Bay Medical Center
+V00567,P0033,Mohammed Nasser,1999-09-11,Female,B-,2022-02-18,Hypertension,I10,None,Amlodipine 5 mg,Doha Care Clinic
+V00032,P0008,Huda Farouk,1961/03/14 10:30:00,m,A-,07-02-2024,Asthma,J45.909,Peanuts,Salbutamol inhaler,Doha Care Clinic
+V00551,P0001,Khalid Al Naimi,04-09-1974,Female,B-,01/10/2026,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00402,P0113,Huda Karim,23-09-1963,m,B+,12/06/2023,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Doha Care Clinic
+V00165,P0038,Mariam Mansour,1988/01/01 10:30:00,m,AB-,2025/03/28 10:30:00,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,Doha Care Clinic
+V00597,P0035,Ahmed Mansour,1956/05/10 10:30:00,Female,O+,2022-09-18,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,West Bay Medical Center
+V00584,P0079,Mohammed Al Sulaiti,1975-09-28,Female,AB+,06/07/2026,Hypertension,I10,Peanuts,Amlodipine 5 mg,Al Wakra Family Clinic
+V00442,P0039,Ahmed Haddad,16-08-2008,F,A+,2026/06/23 10:30:00,Type 2 diabetes,,Penicillin,Metformin 500 mg,West Bay Medical Center
+V00438,P0004,Hassan Karim,2008/04/21 10:30:00,m,B-,2026/10/29 10:30:00,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Al Wakra Family Clinic
+V00121,P0038,Mariam Mansour,1988/01/01 10:30:00,m,AB-,16/09/2024,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,West Bay Medical Center
+V00016,P0118,Layla Mansour,02/02/1975,male,A+,13-04-2025,Asthma,J45.909,Peanuts,Salbutamol inhaler,West Bay Medical Center
+V00035,P0076,Fatima Haddad,07-03-1961,male,O+,2025/11/14 10:30:00,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Al Wakra Family Clinic
+V00259,P0058,Yousef Al Sulaiti,12-04-1975,Female,O-,2023-06-27,Asthma,J45.909,None,Salbutamol inhaler,Doha Care Clinic
+V00028,P0013,Layla Karim,2008-02-20,F,B+,13-12-2024,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Doha Care Clinic
+V00051,P0019,Layla Karim,01/05/2031,m,AB+,24/06/2026,Hypertension,,None,Amlodipine 5 mg,Doha Care Clinic
+V00499,P0119,Hassan Hassan,27-08-1971,m,AB-,2025/11/09 10:30:00,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00326,P0108,Khalid Nasser,1952-04-21,male,AB+,2025-11-13,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Al Wakra Family Clinic
+V00124,P0032,Huda Hassan,1972-03-29,Female,A-,2022/04/14 10:30:00,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00550,P0120,Ibrahim Karim,17/09/1992,f,AB-,19-07-2024,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00446,P0042,Ibrahim Hassan,03/10/1989,F,A+,2022-04-12,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00390,P0067,Ibrahim Al Sulaiti,13-04-1964,F,AB+,02-04-2023,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00109,P0005,Layla Al Naimi,28/04/1964,m,O-,22-10-2025,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00592,P0117,Amina Mansour,25-04-1966,f,B-,28/12/2022,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00188,P0010,Omar Al Naimi,29-04-2009,Female,O+,2026/05/04 10:30:00,Asthma,J45.909,None,Salbutamol inhaler,Doha Care Clinic
+V00054,P0059,Layla Farouk,1993-10-30,male,A+,05-05-2022,Common cold,J06.9,None,Paracetamol 500 mg,Al Wakra Family Clinic
+V00549,P0085,Noor Ahmed,29/03/1963,M,A-,23/06/2022,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,West Bay Medical Center
+V00473,P0100,Mohammed Hassan,2007/08/31 10:30:00,m,B+,14-12-2023,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Al Wakra Family Clinic
+V00059,P0011,Ibrahim Hassan,07-02-1984,male,AB-,2022/07/17 10:30:00,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00207,P0104,Ibrahim Haddad,1956-02-27,M,A+,2022/02/16 10:30:00,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00496,P0078,Mariam Haddad,06/01/1984,Male,O+,06/05/2025,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,Doha Care Clinic
+V00399,P0065,Mariam Nasser,1963-11-13,Female,B+,14/09/2024,Type 2 diabetes,,None,Metformin 500 mg,West Bay Medical Center
+V00031,P0096,Mohammed Mansour,15-10-1976,m,AB+,2022-07-21,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Al Wakra Family Clinic
+V00008,P0054,Hassan Farouk,17/10/1973,Male,O-,08-05-2026,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00220,P0016,Fatima Saleh,08/01/1974,F,B-,2026/07/19 10:30:00,Hypertension,I10,Peanuts,Amlodipine 5 mg,West Bay Medical Center
+V00315,P0043,Mohammed Hassan,1971-03-17,Male,AB+,2023/04/01 10:30:00,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Doha Care Clinic
+V00483,P0003,Mohammed Hassan,13/08/1969,Female,A+,24/02/2026,Asthma,J45.909,Peanuts,Salbutamol inhaler,Doha Care Clinic
+V00404,P0110,Sara Haddad,13-11-2003,F,A+,2025/03/02 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00153,P0018,Huda Khalid,06/10/1973,Male,B-,2024/07/20 10:30:00,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00360,P0070,Layla Hassan,16/01/1975,female,AB+,09/05/2026,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Al Wakra Family Clinic
+V00320,P0021,Khalid Khalid,2006-04-17,Male,,23-09-2022,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,West Bay Medical Center
+V00221,P0105,Hassan Al Naimi,2005-09-28,Male,B-,2025/03/13 10:30:00,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00481,P0019,Layla Karim,2002-06-12,m,AB+,03/08/2026,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00533,P0017,Fatima Ahmed,20-10-2008,f,AB+,2025-10-15,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00123,P0045,Mohammed Saleh,17/10/1973,f,O+,2026/04/07 10:30:00,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,West Bay Medical Center
+V00005,P0007,Khalid Mansour,1980/11/09 10:30:00,male,A+,29/11/2025,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,West Bay Medical Center
+V00308,P0045,Mohammed Saleh,1973/10/17 10:30:00,f,O+,23-03-2023,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00182,P0029,Amina Hassan,1997-10-16,Male,B+,2025-08-31,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Doha Care Clinic
+V00532,P0035,Ahmed Mansour,1956/05/10 10:30:00,Female,O+,21/03/2025,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,Doha Care Clinic
+V00118,P0011,Ibrahim Hassan,07/02/1984,male,AB-,2025/07/24 10:30:00,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Doha Care Clinic
+V00595,P0042,Ibrahim Hassan,1989-10-03,F,A+,01-05-2023,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,Doha Care Clinic
+V00408,P0061,Layla Khalid,22-08-1989,m,A+,2022-06-30,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00534,P0115,Layla Mansour,10-01-1972,F,O+,2025/06/16 10:30:00,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00352,P0090,Amina Haddad,1971/06/19 10:30:00,male,AB-,2026/09/23 10:30:00,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00369,P0014,Ibrahim Khalid,22-06-1991,m,O+,2025-08-17,Hypertension,,Sulfa drugs,Amlodipine 5 mg,West Bay Medical Center
+V00316,P0034,Omar Karim,2006/08/14 10:30:00,M,B-,2024-08-07,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00400,P0056,Sara Nasser,02-09-2008,M,O+,2024-01-29,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,West Bay Medical Center
+V00372,P0075,Hassan Mansour,1988-09-10,F,O-,2024-01-03,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Al Wakra Family Clinic
+V00330,P0031,Hassan Karim,1977-12-19,m,O-,2025-10-07,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Doha Care Clinic
+V00144,P0113,Huda Karim,23-09-1963,m,B+,25/08/2025,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00049,P0085,Noor Ahmed,1963-03-29,M,A-,2022/04/14 10:30:00,Hypertension,I10,Penicillin,Amlodipine 5 mg,Doha Care Clinic
+V00570,P0099,Yousef Nasser,1997/12/02 10:30:00,M,AB+,12/06/2023,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Doha Care Clinic
+V00129,P0036,Amina Ahmed,1998-05-18,Male,AB-,2022-09-21,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00040,P0101,Ali Al Naimi,1973/05/04 10:30:00,m,O-,2024/12/23 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00542,P0009,Sara Haddad,2005-06-28,female,B-,04-11-2025,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00027,P0117,Amina Mansour,25-04-1966,f,B-,21/09/2025,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00467,P0046,Amina Khalid,1967/01/14 10:30:00,male,B-,2026/09/27 10:30:00,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00538,P0099,Yousef Nasser,02/12/1997,M,AB+,2024-11-06,Asthma,J45.909,Peanuts,Salbutamol inhaler,Al Wakra Family Clinic
+V00425,P0055,Ibrahim Mansour,27-07-1975,Male,AB-,2025/12/06 10:30:00,Hypertension,I10,Peanuts,Amlodipine 5 mg,Al Wakra Family Clinic
+V00125,P0105,Hassan Al Naimi,2005/09/28 10:30:00,Male,B-,24/01/2023,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00200,P0109,Hassan Hassan,13-02-2003,Female,A-,2022/10/13 10:30:00,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Doha Care Clinic
+V00391,P0001,Khalid Al Naimi,04/09/1974,Female,B-,19/06/2024,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00582,P0084,Omar Rahman,08-03-1987,Female,AB+,2025-06-20,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Doha Care Clinic
+V00258,P0014,Ibrahim Khalid,1991-06-22,m,O+,03-12-2022,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,Al Wakra Family Clinic
+V00036,P0031,Hassan Karim,1977/12/19 10:30:00,m,O-,2025/03/23 10:30:00,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,West Bay Medical Center
+V00507,P0021,Khalid Khalid,17-04-2006,Male,AB+,31/03/2022,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00037,P0073,Fatima Saleh,2004-05-21,F,AB+,26-05-2025,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Al Wakra Family Clinic
+V00091,P0037,Amina Saleh,31/01/1967,F,A-,13-07-2023,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,West Bay Medical Center
+V00292,P0092,Omar Khalid,14/07/1963,Female,AB+,04-09-2022,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00137,P0041,Huda Khalid,07-11-1987,Male,O+,2024/12/27 10:30:00,Hypertension,I10,Penicillin,Amlodipine 5 mg,West Bay Medical Center
+V00325,P0016,Fatima Saleh,1974-01-08,F,B-,2024/02/08 10:30:00,Asthma,J45.909,Peanuts,Salbutamol inhaler,West Bay Medical Center
+V00554,P0086,Ibrahim Khalid,1996/06/20 10:30:00,f,A+,2025-06-09,Type 2 diabetes,,Peanuts,Metformin 500 mg,Al Wakra Family Clinic
+V00397,P0059,Layla Farouk,1993-10-30,male,A+,16-04-2023,High cholesterol,,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00179,,Ibrahim Karim,2031/05/01 10:30:00,f,AB-,12-09-2025,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00338,P0087,Ibrahim Hassan,14/12/1990,Male,AB-,2025/10/03 10:30:00,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,West Bay Medical Center
+V00381,P0108,Khalid Nasser,21/04/1952,male,AB+,2025/10/23 10:30:00,Asthma,J45.909,Penicillin,Salbutamol inhaler,Al Wakra Family Clinic
+V00078,P0083,Yousef Al Naimi,23-02-1954,Female,AB-,2024-08-05,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Al Wakra Family Clinic
+V00205,P0004,Hassan Karim,2008-04-21,m,B-,29-08-2023,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Doha Care Clinic
+V00484,P0019,Layla Karim,2002-06-12,m,AB+,2024-02-11,Common cold,J06.9,None,Paracetamol 500 mg,Al Wakra Family Clinic
+V00217,P0069,Ibrahim Ahmed,15/02/1952,Female,AB+,18-05-2026,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00212,P0023,Mohammed Haddad,1960/04/11 10:30:00,male,O-,2025-06-12,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00081,P0077,Mariam Mansour,1986/02/06 10:30:00,male,B+,2022/05/15 10:30:00,Type 2 diabetes,E11.9,None,Metformin 500 mg,Doha Care Clinic
+V00436,P0009,Sara Haddad,2005-06-28,female,B-,23-02-2022,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,West Bay Medical Center
+V00302,P0004,Hassan Karim,21/04/2008,m,B-,28/11/2026,Hypertension,I10,Penicillin,Amlodipine 5 mg,Doha Care Clinic
+V00356,P0026,Hassan Khalid,19/07/1983,Male,A+,2023/08/10 10:30:00,Asthma,J45.909,Peanuts,Salbutamol inhaler,Doha Care Clinic
+V00306,,Fatima Rahman,01-10-1951,F,O-,2024-11-17,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00279,P0096,Mohammed Mansour,15/10/1976,m,AB+,2023/12/12 10:30:00,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Doha Care Clinic
+V00455,P0063,Yousef Saleh,1961/06/08 10:30:00,M,O+,2025/02/17 10:30:00,Hypertension,,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00293,P0006,Yousef Ahmed,1980-03-13,F,A-,31-10-2025,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Doha Care Clinic
+V00047,P0036,Amina Ahmed,1998/05/18 10:30:00,Male,AB-,21-03-2023,Type 2 diabetes,E11.9,None,Metformin 500 mg,Al Wakra Family Clinic
+V00161,P0029,Amina Hassan,1997-10-16,Male,B+,04-09-2023,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,West Bay Medical Center
+V00197,P0026,Hassan Khalid,1983/07/19 10:30:00,Male,A+,30-12-2022,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00050,P0071,Fatima Al Naimi,07/05/1960,male,B+,24/07/2026,Hypertension,I10,Peanuts,Amlodipine 5 mg,Al Wakra Family Clinic
+V00132,P0065,Mariam Nasser,13-11-1963,Female,B+,2025/12/22 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00020,P0007,Khalid Mansour,1980/11/09 10:30:00,male,A+,29/01/2025,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,Al Wakra Family Clinic
+V00404,P0110,Sara Haddad,13-11-2003,F,A+,2025/03/02 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00588,P0076,Fatima Haddad,07-03-1961,male,O+,21-11-2025,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,West Bay Medical Center
+V00239,P0098,Mohammed Saleh,1980-02-27,m,B+,2022-02-04,Iron-deficiency anemia,,Penicillin,Ferrous sulfate 200 mg,Doha Care Clinic
+V00406,P0091,Sara Ahmed,18/05/1974,female,O-,2026-10-18,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,West Bay Medical Center
+V00392,P0047,Ahmed Karim,1978-02-19,M,A+,15/09/2025,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00479,P0100,Mohammed Hassan,2007/08/31 10:30:00,m,B+,2025-11-03,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Doha Care Clinic
+V00451,P0088,Fatima Rahman,2004/12/18 10:30:00,m,AB-,2022-11-21,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00346,P0067,Ibrahim Al Sulaiti,1964-04-13,F,AB+,04/04/2022,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00108,P0109,Hassan Hassan,13-02-2003,Female,A-,13/03/2022,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Doha Care Clinic
+V00598,P0054,Hassan Farouk,1973/10/17 10:30:00,Male,O-,2023/03/27 10:30:00,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00070,P0030,Amina Farouk,1964/10/24 10:30:00,male,AB+,28-05-2022,High cholesterol,,None,Atorvastatin 20 mg,West Bay Medical Center
+V00531,P0020,Ibrahim Khalid,1995/09/18 10:30:00,f,A-,2022-08-23,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00562,P0097,Ibrahim Rahman,08/09/1969,male,AB+,17-02-2024,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00413,,Amina Ahmed,18/05/1998,Male,AB-,20-07-2024,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00489,P0065,Mariam Nasser,1963-11-13,Female,B+,2025/07/05 10:30:00,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00504,P0090,Amina Haddad,19/06/1971,male,AB-,16-03-2024,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00225,P0012,Aisha Khalid,2031-05-01,female,B-,2025/11/23 10:30:00,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00596,P0114,Layla Nasser,13/04/1998,f,AB-,19-03-2023,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Doha Care Clinic
+V00082,P0117,Amina Mansour,25/04/1966,f,B-,2023-11-14,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00038,P0025,Layla Farouk,1966/01/11 10:30:00,F,O+,20/10/2025,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,West Bay Medical Center
+V00030,P0041,Huda Khalid,07-11-1987,Male,O+,2026-11-22,Common cold,J06.9,Penicillin,Paracetamol 500 mg,West Bay Medical Center
+V00321,P0094,Fatima Farouk,1991-10-20,m,A+,22/10/2023,Asthma,J45.909,None,Salbutamol inhaler,Doha Care Clinic
+V00545,P0079,Mohammed Al Sulaiti,28-09-1975,Female,o+,02/10/2026,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00009,P0073,Fatima Saleh,2004-05-21,F,AB+,2025-06-02,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Doha Care Clinic
+V00192,P0004,Hassan Karim,2008/04/21 10:30:00,m,B-,2025-02-09,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,West Bay Medical Center
+V00361,P0095,Mariam Saleh,2002-05-27,M,AB+,2024-02-12,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00311,P0103,Layla Hassan,12-03-1992,M,A+,2025/09/14 10:30:00,High cholesterol,,None,Atorvastatin 20 mg,West Bay Medical Center
+V00133,P0075,Hassan Mansour,1988-09-10,F,O-,07-05-2025,Asthma,J45.909,Peanuts,Salbutamol inhaler,Al Wakra Family Clinic
+V00006,P0061,Layla Khalid,22-08-1989,m,A+,29/11/2023,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00517,P0073,Fatima Saleh,21-05-2004,F,AB+,05/10/2024,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,West Bay Medical Center
+V00186,P0051,Fatima Al Sulaiti,1968/04/29 10:30:00,female,B-,29/11/2022,Type 2 diabetes,E11.9,None,Metformin 500 mg,West Bay Medical Center
+V00035,P0076,Fatima Haddad,07-03-1961,male,O+,2025/11/14 10:30:00,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Al Wakra Family Clinic
+V00286,P0039,Ahmed Haddad,2008-08-16,F,unknown,12-04-2022,Hypertension,I10,Penicillin,Amlodipine 5 mg,West Bay Medical Center
+V00574,P0090,Amina Haddad,19-06-1971,male,AB-,2025-03-22,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00062,P0036,Amina Ahmed,18/05/1998,Male,AB-,12-07-2026,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00015,P0087,Ibrahim Hassan,1990-12-14,Male,AB-,2026/04/16 10:30:00,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,West Bay Medical Center
+V00535,P0011,Ibrahim Hassan,07/02/1984,male,AB-,10-07-2022,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Doha Care Clinic
+V00388,P0067,Ibrahim Al Sulaiti,13-04-1964,F,AB+,19-08-2024,Asthma,J45.909,None,Salbutamol inhaler,Doha Care Clinic
+V00092,P0058,Yousef Al Sulaiti,1975-04-12,Female,O-,2024-04-29,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00511,P0080,Fatima Rahman,20/08/1989,f,B-,11/04/2022,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Doha Care Clinic
+V00322,P0045,Mohammed Saleh,17/10/1973,f,O+,30-07-2022,Asthma,J45.909,Penicillin,Salbutamol inhaler,West Bay Medical Center
+V00064,P0073,Fatima Saleh,21-05-2004,F,AB+,23/05/2022,Common cold,,Peanuts,Paracetamol 500 mg,West Bay Medical Center
+V00242,P0083,Yousef Al Naimi,1954/02/23 10:30:00,Female,AB-,01-12-2025,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,West Bay Medical Center
+V00154,P0106,Amina Haddad,06/04/1960,Female,AB-,2025-10-25,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,West Bay Medical Center
+V00135,P0025,Layla Farouk,11-01-1966,F,O+,05-10-2023,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00576,P0046,Amina Khalid,1967/01/14 10:30:00,male,B-,2024-03-31,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00583,P0040,Fatima Hassan,22-04-1972,Female,B-,05/06/2025,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,West Bay Medical Center
+V00014,P0064,Ahmed Mansour,1968-11-05,Female,A-,2025-05-09,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00518,P0060,Mariam Al Sulaiti,1953-12-15,M,O-,19/02/2026,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00238,P0114,Layla Nasser,1998/04/13 10:30:00,f,AB-,11/10/2023,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Al Wakra Family Clinic
+V00253,P0002,Khalid Haddad,1998-12-05,F,AB+,04-04-2026,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00494,,Yousef Karim,12/03/1969,F,AB+,13/10/2023,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,West Bay Medical Center
+V00412,P0067,Ibrahim Al Sulaiti,1964-04-13,F,AB+,2022/07/04 10:30:00,Type 2 diabetes,E11.9,None,Metformin 500 mg,West Bay Medical Center
+V00456,P0033,Mohammed Nasser,11-09-1999,Female,B-,18-12-2025,Type 2 diabetes,E11.9,None,Metformin 500 mg,West Bay Medical Center
+V00384,P0034,Omar Karim,14-08-2006,M,B-,01/09/2025,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00543,P0114,Layla Nasser,1998-04-13,f,AB-,31/03/2026,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,West Bay Medical Center
+V00565,P0087,Ibrahim Hassan,14/12/1990,Male,AB-,12/02/2026,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,West Bay Medical Center
+V00196,P0103,Layla Hassan,12-03-1992,M,A+,17-11-2023,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00096,P0059,Layla Farouk,1993-10-30,male,A+,10-09-2026,Type 2 diabetes,E11.9,None,Metformin 500 mg,West Bay Medical Center
+V00103,P0016,Fatima Saleh,08-01-1974,F,B-,27-12-2026,Asthma,J45.909,Peanuts,Salbutamol inhaler,West Bay Medical Center
+V00071,P0074,Hassan Al Sulaiti,25-12-1953,m,A+,24-12-2025,Iron-deficiency anemia,,Peanuts,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00569,P0115,Layla Mansour,10/01/1972,F,O+,2023/06/03 10:30:00,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Al Wakra Family Clinic
+V00237,P0051,Fatima Al Sulaiti,1968-04-29,female,B-,25/05/2026,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00285,P0013,Layla Karim,20/02/2008,F,B+,25-01-2023,Asthma,J45.909,Peanuts,Salbutamol inhaler,West Bay Medical Center
+V00443,P0072,Layla Al Naimi,23-09-1959,m,O-,27/05/2023,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,West Bay Medical Center
+V00319,P0081,Amina Karim,1965/03/23 10:30:00,F,O+,2025-07-23,Hypertension,I10,Peanuts,Amlodipine 5 mg,Doha Care Clinic
+V00140,P0037,Amina Saleh,31-01-1967,F,A-,2024/03/19 10:30:00,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00536,P0030,Amina Farouk,24/10/1964,male,AB+,2026/10/30 10:30:00,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00004,P0037,Amina Saleh,31/01/1967,F,A-,30/08/2023,Type 2 diabetes,,Sulfa drugs,Metformin 500 mg,Al Wakra Family Clinic
+V00046,P0086,Ibrahim Khalid,20-06-1996,f,A+,17/04/2025,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Al Wakra Family Clinic
+V00529,P0006,Yousef Ahmed,1980-03-13,F,o+,14-11-2023,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Doha Care Clinic
+V00600,P0036,Amina Ahmed,18-05-1998,Male,AB-,16/02/2026,Type 2 diabetes,E11.9,None,Metformin 500 mg,Doha Care Clinic
+V00578,P0039,Ahmed Haddad,16-08-2008,F,A+,2022/08/07 10:30:00,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Al Wakra Family Clinic
+V00487,P0069,Ibrahim Ahmed,15/02/1952,Female,AB+,12-02-2023,Type 2 diabetes,,None,Metformin 500 mg,West Bay Medical Center
+V00269,P0008,Huda Farouk,1961/03/14 10:30:00,m,A-,20/04/2026,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Doha Care Clinic
+V00244,P0067,Ibrahim Al Sulaiti,1964/04/13 10:30:00,F,AB+,2022/12/08 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00470,P0099,Yousef Nasser,1997/12/02 10:30:00,M,AB+,07/02/2025,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Doha Care Clinic
+V00107,P0102,Huda Mansour,1980-04-12,m,O+,06-10-2025,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Al Wakra Family Clinic
+V00074,P0100,Mohammed Hassan,2007/08/31 10:30:00,m,B+,29/01/2026,Asthma,J45.909,Penicillin,Salbutamol inhaler,Doha Care Clinic
+V00327,P0027,Fatima Rahman,1951-10-01,F,O-,09-09-2023,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00307,P0002,Khalid Haddad,1998/12/05 10:30:00,F,AB+,2025/05/30 10:30:00,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00512,P0074,Hassan Al Sulaiti,1953/12/25 10:30:00,m,A+,2023-11-10,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Doha Care Clinic
+V00525,P0041,Huda Khalid,1987-11-07,Male,O+,11-07-2023,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Doha Care Clinic
+V00324,P0117,Amina Mansour,1966-04-25,f,B-,13/04/2023,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00218,P0015,Ibrahim Haddad,1979/02/04 10:30:00,M,B-,2025-01-15,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00414,P0065,Mariam Nasser,1963/11/13 10:30:00,Female,B+,2022/08/28 10:30:00,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00458,P0059,Layla Farouk,30-10-1993,male,A+,11/02/2026,Type 2 diabetes,E11.9,None,Metformin 500 mg,Doha Care Clinic
+V00386,P0088,Fatima Rahman,18/12/2004,m,AB-,02/07/2024,Hypertension,I10,None,Amlodipine 5 mg,Doha Care Clinic
+V00573,P0033,Mohammed Nasser,1999-09-11,Female,B-,16/10/2024,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00472,P0042,Ibrahim Hassan,03/10/1989,F,A+,2024-09-26,Iron-deficiency anemia,,Sulfa drugs,Ferrous sulfate 200 mg,West Bay Medical Center
+V00111,P0034,Omar Karim,14-08-2006,M,B-,2023/03/16 10:30:00,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00351,P0078,Mariam Haddad,06/01/1984,Male,O+,15-07-2023,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Al Wakra Family Clinic
+V00424,P0042,Ibrahim Hassan,1989/10/03 10:30:00,F,A+,2023/01/19 10:30:00,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Doha Care Clinic
+V00539,P0102,Huda Mansour,12-04-1980,m,O+,31-03-2024,Asthma,J45.909,Penicillin,Salbutamol inhaler,Doha Care Clinic
+V00540,P0044,Amina Ahmed,24-12-1985,M,B+,26-05-2026,Hypertension,I10,Penicillin,Amlodipine 5 mg,West Bay Medical Center
+V00559,P0104,Ibrahim Haddad,1956/02/27 10:30:00,M,A+,22/05/2026,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00419,P0064,Ahmed Mansour,05/11/1968,Female,A-,26/04/2023,Common cold,J06.9,None,Paracetamol 500 mg,Al Wakra Family Clinic
+V00452,P0026,Hassan Khalid,2031/05/01 10:30:00,Male,A+,04/11/2026,Asthma,J45.909,Peanuts,Salbutamol inhaler,Doha Care Clinic
+V00007,P0063,Yousef Saleh,1961-06-08,M,O+,07/11/2022,Type 2 diabetes,E11.9,None,Metformin 500 mg,West Bay Medical Center
+V00428,P0069,Ibrahim Ahmed,1952/02/15 10:30:00,Female,AB+,28-05-2026,Common cold,J06.9,None,Paracetamol 500 mg,Al Wakra Family Clinic
+V00198,P0032,Huda Hassan,29-03-1972,Female,A-,29-07-2023,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00427,P0019,Layla Karim,12/06/2002,m,AB+,2024-08-26,Common cold,J06.9,None,Paracetamol 500 mg,Doha Care Clinic
+V00219,P0084,Omar Rahman,1987/03/08 10:30:00,Female,AB+,2026-11-27,Hypertension,I10,Penicillin,Amlodipine 5 mg,Al Wakra Family Clinic
+V00389,P0082,Fatima Hassan,1971/01/27 10:30:00,male,B-,31/03/2025,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00204,P0072,Layla Al Naimi,23/09/1959,m,O-,2024/07/01 10:30:00,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00185,P0073,Fatima Saleh,2004-05-21,F,AB+,2023/01/03 10:30:00,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Doha Care Clinic
+V00366,P0080,Fatima Rahman,1989-08-20,f,B-,2025/10/29 10:30:00,Hypertension,I10,Peanuts,Amlodipine 5 mg,Al Wakra Family Clinic
+V00262,P0018,Huda Khalid,1973-10-06,Male,B-,07/05/2022,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00310,P0042,Ibrahim Hassan,1989/10/03 10:30:00,F,A+,2025/09/05 10:30:00,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Doha Care Clinic
+V00309,P0066,Mariam Al Naimi,1966/02/03 10:30:00,female,AB+,2025/02/23 10:30:00,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Al Wakra Family Clinic
+V00420,,Ibrahim Khalid,1995-09-18,f,A-,10-06-2022,Type 2 diabetes,E11.9,None,Metformin 500 mg,West Bay Medical Center
+V00252,,Ahmed Mansour,05/11/1968,Female,A-,2022-11-05,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00423,P0100,Mohammed Hassan,31-08-2007,m,B+,04-09-2022,Hypertension,,Penicillin,Amlodipine 5 mg,Al Wakra Family Clinic
+V00202,P0102,Huda Mansour,1980-04-12,m,O+,12/08/2022,Asthma,J45.909,Penicillin,Salbutamol inhaler,West Bay Medical Center
+V00263,P0011,Ibrahim Hassan,1984/02/07 10:30:00,male,AB-,2026-07-23,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Doha Care Clinic
+V00045,P0018,Huda Khalid,1973-10-06,Male,B-,16-09-2023,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00571,P0034,Omar Karim,14/08/2006,M,B-,2024-06-21,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00347,P0079,Mohammed Al Sulaiti,28/09/1975,Female,AB+,05-09-2022,Hypertension,I10,Peanuts,Amlodipine 5 mg,Doha Care Clinic
+V00370,P0010,Omar Al Naimi,29/04/2009,Female,O+,2026/06/15 10:30:00,Type 2 diabetes,E11.9,None,Metformin 500 mg,West Bay Medical Center
+V00276,P0056,Sara Nasser,02-09-2008,M,O+,2025/08/22 10:30:00,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Doha Care Clinic
+V00043,P0034,Omar Karim,14-08-2006,M,B-,2026/08/12 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00495,P0039,Ahmed Haddad,2008/08/16 10:30:00,F,A+,08/11/2022,Iron-deficiency anemia,,Penicillin,Ferrous sulfate 200 mg,Doha Care Clinic
+V00544,P0026,Hassan Khalid,1983/07/19 10:30:00,Male,A+,2023/09/06 10:30:00,Hypertension,I10,Peanuts,Amlodipine 5 mg,Al Wakra Family Clinic
+V00143,P0043,Mohammed Hassan,17-03-1971,Male,AB+,25/07/2022,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Doha Care Clinic
+V00566,P0087,Ibrahim Hassan,1990-12-14,Male,AB-,25-01-2022,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00270,P0118,Layla Mansour,1975-02-02,male,A+,14/04/2026,Common cold,J06.9,Peanuts,Paracetamol 500 mg,West Bay Medical Center
+V00299,P0036,Amina Ahmed,1998-05-18,Male,AB-,15/11/2026,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00100,P0100,Mohammed Hassan,31-08-2007,m,B+,25-11-2025,Common cold,J06.9,Penicillin,Paracetamol 500 mg,West Bay Medical Center
+V00548,,Hassan Farouk,1973/10/17 10:30:00,Male,O-,23/11/2026,Hypertension,I10,None,Amlodipine 5 mg,Doha Care Clinic
+V00312,P0117,Amina Mansour,25-04-1966,f,B-,2024-03-06,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00029,P0061,Layla Khalid,1989/08/22 10:30:00,m,A+,30-06-2025,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00480,P0077,Mariam Mansour,1986-02-06,male,B+,2026/04/26 10:30:00,Common cold,J06.9,None,Paracetamol 500 mg,Doha Care Clinic
+V00048,P0070,Layla Hassan,1975/01/16 10:30:00,female,AB+,05-05-2022,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Al Wakra Family Clinic
+V00183,P0090,Amina Haddad,1971-06-19,male,AB-,20-10-2024,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00229,P0089,Amina Rahman,1973/04/03 10:30:00,Female,O+,2022/11/22 10:30:00,Hypertension,I10,Peanuts,Amlodipine 5 mg,Doha Care Clinic
+V00113,P0109,Hassan Hassan,13/02/2003,Female,A-,2026/06/14 10:30:00,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,West Bay Medical Center
+V00449,P0025,Layla Farouk,11-01-1966,F,O+,2026-08-24,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Doha Care Clinic
+V00206,P0059,Layla Farouk,30-10-1993,male,A+,15-12-2023,Hypertension,I10,None,Amlodipine 5 mg,Doha Care Clinic
+V00410,P0103,Layla Hassan,1992/03/12 10:30:00,M,A+,2023-02-03,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00158,P0055,Ibrahim Mansour,1975-07-27,Male,AB-,2025-01-13,Asthma,J45.909,Peanuts,Salbutamol inhaler,Doha Care Clinic
+V00579,P0025,Layla Farouk,11/01/1966,F,O+,28-09-2024,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00519,P0082,Fatima Hassan,1971-01-27,male,B-,04/08/2025,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00348,P0054,Hassan Farouk,1973-10-17,Male,O-,01-05-2026,Type 2 diabetes,E11.9,None,Metformin 500 mg,Al Wakra Family Clinic
+V00072,P0080,Fatima Rahman,1989/08/20 10:30:00,f,B-,30-06-2022,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Doha Care Clinic
+V00021,P0078,Mariam Haddad,06/01/1984,Male,O+,2023-09-29,Hypertension,I10,Penicillin,Amlodipine 5 mg,West Bay Medical Center
+V00246,P0064,Ahmed Mansour,1968/11/05 10:30:00,Female,A-,24-04-2022,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00561,P0027,Fatima Rahman,1951/10/01 10:30:00,F,O-,2022/04/22 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00058,P0041,Huda Khalid,1987/11/07 10:30:00,Male,O+,2025/09/24 10:30:00,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00353,P0092,Omar Khalid,1963/07/14 10:30:00,Female,AB+,09/10/2025,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,West Bay Medical Center
+V00174,P0061,Layla Khalid,22/08/1989,m,b +,2024/01/30 10:30:00,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00227,P0042,Ibrahim Hassan,1989/10/03 10:30:00,F,A+,25/01/2025,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,West Bay Medical Center
+V00374,P0109,Hassan Hassan,2003/02/13 10:30:00,Female,A-,22/07/2025,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00290,P0020,Ibrahim Khalid,1995-09-18,f,A-,2022/06/25 10:30:00,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00418,P0023,Mohammed Haddad,1960/04/11 10:30:00,male,O-,26/12/2023,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00439,P0018,Huda Khalid,06/10/1973,Male,B-,25-04-2025,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,West Bay Medical Center
+V00294,P0117,Amina Mansour,1966-04-25,f,B-,28-06-2022,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00387,P0094,Fatima Farouk,1991/10/20 10:30:00,m,A+,24/03/2022,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00149,P0023,Mohammed Haddad,11-04-1960,male,O-,21-08-2026,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00505,P0026,Hassan Khalid,1983-07-19,Male,A+,2023/05/28 10:30:00,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,West Bay Medical Center
+V00517,P0073,Fatima Saleh,21-05-2004,F,AB+,05/10/2024,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,West Bay Medical Center
+V00547,P0056,Sara Nasser,02/09/2008,M,O+,18/09/2025,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00332,P0023,Mohammed Haddad,1960/04/11 10:30:00,male,O-,2024/01/08 10:30:00,Type 2 diabetes,E11.9,None,Metformin 500 mg,Al Wakra Family Clinic
+V00170,P0093,Yousef Karim,1969-03-12,F,AB+,04-07-2023,Hypertension,,Penicillin,Amlodipine 5 mg,West Bay Medical Center
+V00260,P0006,Yousef Ahmed,1980/03/13 10:30:00,F,A-,2022-10-31,Hypertension,I10,Penicillin,Amlodipine 5 mg,West Bay Medical Center
+V00280,P0094,Fatima Farouk,20-10-1991,m,A+,2022/01/24 10:30:00,Asthma,J45.909,None,Salbutamol inhaler,Doha Care Clinic
+V00379,P0025,Layla Farouk,11-01-1966,F,O+,2024/07/11 10:30:00,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,West Bay Medical Center
+V00003,P0096,Mohammed Mansour,15/10/1976,m,AB+,28/01/2023,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,West Bay Medical Center
+V00080,P0091,Sara Ahmed,18-05-1974,female,O-,09/12/2024,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00164,P0032,Huda Hassan,1972-03-29,Female,A-,03-04-2024,Common cold,J06.9,None,Paracetamol 500 mg,Doha Care Clinic
+V00593,P0033,Mohammed Nasser,11-09-1999,Female,unknown,2022-03-30,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00075,P0098,Mohammed Saleh,1980-02-27,m,B+,29-12-2022,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Al Wakra Family Clinic
+V00394,P0066,Mariam Al Naimi,03/02/1966,female,AB+,25/04/2022,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Al Wakra Family Clinic
+V00256,P0073,Fatima Saleh,21-05-2004,F,AB+,18/09/2025,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Doha Care Clinic
+V00208,P0067,Ibrahim Al Sulaiti,13/04/1964,F,AB+,09-11-2023,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00046,P0086,Ibrahim Khalid,20-06-1996,f,A+,17/04/2025,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Al Wakra Family Clinic
+V00063,P0004,Hassan Karim,2008/04/21 10:30:00,m,,01/03/2022,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00515,P0027,Fatima Rahman,01/10/1951,F,O-,2025-06-07,Common cold,J06.9,None,Paracetamol 500 mg,Doha Care Clinic
+V00546,P0015,Ibrahim Haddad,1979-02-04,M,B-,27-04-2023,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00084,P0090,Amina Haddad,1971-06-19,male,AB-,16-08-2025,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00575,P0094,Fatima Farouk,20/10/1991,m,A+,07-01-2022,Type 2 diabetes,E11.9,None,Metformin 500 mg,West Bay Medical Center
+V00230,P0022,Omar Saleh,27-03-1984,f,O+,2025/07/05 10:30:00,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,West Bay Medical Center
+V00459,P0009,Sara Haddad,28-06-2005,female,B-,24-01-2023,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,West Bay Medical Center
+V00454,P0012,Aisha Khalid,1983/03/19 10:30:00,female,B-,2026-04-05,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Doha Care Clinic
+V00177,P0063,Yousef Saleh,1961-06-08,M,O+,2024-12-09,Hypertension,I10,None,Amlodipine 5 mg,Doha Care Clinic
+V00474,P0109,Hassan Hassan,2003-02-13,Female,A-,22-07-2025,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Doha Care Clinic
+V00563,P0103,Layla Hassan,12-03-1992,M,A+,2025/10/21 10:30:00,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00018,P0098,Mohammed Saleh,1980-02-27,m,B+,2024-07-20,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00441,P0001,Khalid Al Naimi,04/09/1974,Female,B-,2023/12/06 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00288,P0015,Ibrahim Haddad,04-02-1979,M,B-,22-08-2024,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00106,P0089,Amina Rahman,1973/04/03 10:30:00,Female,O+,2024-07-04,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,West Bay Medical Center
+V00095,P0078,Mariam Haddad,06-01-1984,Male,O+,2022/08/16 10:30:00,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,Doha Care Clinic
+V00586,P0054,Hassan Farouk,1973/10/17 10:30:00,Male,O-,07/02/2025,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00462,P0092,Omar Khalid,1963-07-14,Female,AB+,04-03-2023,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00226,P0059,Layla Farouk,1993/10/30 10:30:00,male,A+,2026-10-08,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00541,P0010,Omar Al Naimi,29-04-2009,Female,O+,23-08-2022,Common cold,J06.9,None,Paracetamol 500 mg,Al Wakra Family Clinic
+V00295,P0112,Mariam Rahman,21-06-1959,m,O-,19-08-2022,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00163,P0120,Ibrahim Karim,17/09/1992,f,AB-,2023-02-27,Type 2 diabetes,E11.9,None,Metformin 500 mg,Doha Care Clinic
+V00022,P0016,Fatima Saleh,08/01/1974,F,B-,2024/10/17 10:30:00,Common cold,J06.9,Peanuts,Paracetamol 500 mg,West Bay Medical Center
+V00060,P0016,Fatima Saleh,1974/01/08 10:30:00,F,B-,25-11-2026,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,West Bay Medical Center
+V00122,P0054,Hassan Farouk,17-10-1973,Male,O-,2023/02/22 10:30:00,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00448,P0048,Amina Farouk,1997-08-25,Male,A+,2023-11-08,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Doha Care Clinic
+V00522,P0115,Layla Mansour,1972/01/10 10:30:00,F,O+,05-08-2024,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,West Bay Medical Center
+V00407,P0066,Mariam Al Naimi,1966/02/03 10:30:00,female,AB+,2026-06-29,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Doha Care Clinic
+V00342,P0012,Aisha Khalid,19-03-1983,female,B-,2023-10-10,Iron-deficiency anemia,,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00355,P0096,Mohammed Mansour,1976/10/15 10:30:00,m,AB+,03-12-2026,High cholesterol,,Peanuts,Atorvastatin 20 mg,Doha Care Clinic
+V00363,P0079,Mohammed Al Sulaiti,1975/09/28 10:30:00,Female,AB+,2024/10/01 10:30:00,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Doha Care Clinic
+V00430,P0047,Ahmed Karim,1978/02/19 10:30:00,M,A+,2023-12-06,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00527,P0004,Hassan Karim,21/04/2008,m,B-,2023/01/25 10:30:00,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00094,,Huda Khalid,06-10-1973,Male,B-,2024-07-07,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Doha Care Clinic
+V00147,P0059,Layla Farouk,30-10-1993,male,A+,27/12/2026,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00275,P0047,Ahmed Karim,1978/02/19 10:30:00,M,A+,13-12-2025,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,West Bay Medical Center
+V00365,P0038,Mariam Mansour,01-01-1988,m,AB-,2025-02-23,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,Doha Care Clinic
+V00526,P0028,Ibrahim Al Naimi,1971/08/11 10:30:00,F,A-,2022-12-25,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00317,P0061,Layla Khalid,1989-08-22,m,A+,12-11-2026,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00482,,Mariam Saleh,27/05/2002,M,AB+,25/06/2025,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Al Wakra Family Clinic
+V00234,P0057,Khalid Khalid,23/09/1973,F,A-,10/07/2025,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Al Wakra Family Clinic
+V00146,P0024,Sara Saleh,1964/03/10 10:30:00,f,A+,2026-12-01,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Doha Care Clinic
+V00181,P0033,Mohammed Nasser,1999/09/11 10:30:00,Female,B-,17-06-2026,Asthma,J45.909,None,Salbutamol inhaler,Doha Care Clinic
+V00076,P0073,Fatima Saleh,2004/05/21 10:30:00,F,AB+,2026/11/05 10:30:00,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Doha Care Clinic
+V00591,P0098,Mohammed Saleh,27/02/1980,m,B+,08/08/2024,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00433,P0052,Noor Khalid,2010-04-05,male,AB-,2022/11/28 10:30:00,Type 2 diabetes,E11.9,None,Metformin 500 mg,Doha Care Clinic
+V00581,P0084,Omar Rahman,08-03-1987,Female,AB+,20/10/2025,Common cold,J06.9,Penicillin,Paracetamol 500 mg,West Bay Medical Center
+V00148,P0059,Layla Farouk,1993/10/30 10:30:00,male,A+,11/01/2026,Common cold,J06.9,None,Paracetamol 500 mg,Doha Care Clinic
+V00191,P0057,Khalid Khalid,1973/09/23 10:30:00,F,A-,29/07/2022,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,Doha Care Clinic
+V00248,P0118,Layla Mansour,02/02/1975,male,A+,2026-10-23,Hypertension,I10,Peanuts,Amlodipine 5 mg,West Bay Medical Center
+V00552,P0005,Layla Al Naimi,28-04-1964,m,O-,2025/12/14 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00134,P0093,Yousef Karim,12-03-1969,F,AB+,16-12-2022,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Doha Care Clinic
+V00590,P0045,Mohammed Saleh,1973-10-17,f,O+,16/02/2025,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Doha Care Clinic
+V00088,P0037,Amina Saleh,31-01-1967,F,A-,25/04/2023,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Al Wakra Family Clinic
+V00157,P0060,Mariam Al Sulaiti,1953/12/15 10:30:00,M,O-,2026-01-21,Common cold,,None,Paracetamol 500 mg,Al Wakra Family Clinic
+V00405,P0101,Ali Al Naimi,04-05-1973,m,O-,2023/01/02 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00460,P0013,Layla Karim,2008-02-20,F,B+,31/03/2022,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Doha Care Clinic
+V00506,P0012,Aisha Khalid,19-03-1983,female,B-,2025/07/22 10:30:00,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00291,P0050,Khalid Nasser,02-02-1972,M,A-,01-01-2025,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,West Bay Medical Center
+V00156,P0075,Hassan Mansour,1988-09-10,F,O-,11-11-2024,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Doha Care Clinic
+V00235,P0018,Huda Khalid,06-10-1973,Male,B-,21-12-2023,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Al Wakra Family Clinic
+V00502,P0057,Khalid Khalid,1973/09/23 10:30:00,F,A-,2026/05/04 10:30:00,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00281,P0001,Khalid Al Naimi,04-09-1974,Female,B-,16-06-2024,Type 2 diabetes,E11.9,None,Metformin 500 mg,Doha Care Clinic
+V00432,P0011,Ibrahim Hassan,1984/02/07 10:30:00,male,AB-,07/08/2024,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Doha Care Clinic
+V00272,P0073,Fatima Saleh,21/05/2004,F,AB+,27/02/2025,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00357,P0005,Layla Al Naimi,28-04-1964,m,O-,29/07/2022,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00580,P0104,Ibrahim Haddad,1956-02-27,M,A+,2022/03/17 10:30:00,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00577,P0044,Amina Ahmed,24-12-1985,M,B+,2026/04/07 10:30:00,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,West Bay Medical Center
+V00249,P0032,Huda Hassan,1972/03/29 10:30:00,Female,A-,2023-07-10,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00168,P0061,Layla Khalid,22/08/1989,m,A+,08/09/2023,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00403,P0001,Khalid Al Naimi,04/09/1974,Female,B-,2025/11/09 10:30:00,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00488,P0043,Mohammed Hassan,17-03-1971,Male,AB+,05/03/2026,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Doha Care Clinic
+V00336,,Khalid Khalid,23-09-1973,F,A-,2026/05/15 10:30:00,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,West Bay Medical Center
+V00176,P0044,Amina Ahmed,24-12-1985,M,B+,21-01-2026,Asthma,J45.909,Penicillin,Salbutamol inhaler,Al Wakra Family Clinic
+V00297,P0074,Hassan Al Sulaiti,25-12-1953,m,A+,18/03/2022,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00211,P0111,Mariam Haddad,1983/03/31 10:30:00,F,O-,07-05-2025,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00172,P0095,Mariam Saleh,27-05-2002,M,AB+,12/05/2023,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Al Wakra Family Clinic
+V00500,P0106,Amina Haddad,1960/04/06 10:30:00,Female,AB-,2024-03-18,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,West Bay Medical Center
+V00267,P0018,Huda Khalid,01-05-2031,Male,B-,09/08/2025,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,West Bay Medical Center
+V00486,P0003,Mohammed Hassan,13-08-1969,Female,A+,19-04-2023,Asthma,J45.909,Peanuts,Salbutamol inhaler,West Bay Medical Center
+V00428,P0069,Ibrahim Ahmed,1952/02/15 10:30:00,Female,AB+,28-05-2026,Common cold,J06.9,None,Paracetamol 500 mg,Al Wakra Family Clinic
+V00119,P0076,Fatima Haddad,07/03/1961,male,O+,2022/12/17 10:30:00,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,West Bay Medical Center
+V00411,P0047,Ahmed Karim,1978-02-19,M,A+,2022-11-19,Hypertension,I10,Peanuts,Amlodipine 5 mg,Al Wakra Family Clinic
+V00447,P0002,Khalid Haddad,1998-12-05,F,AB+,2022-11-05,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00012,P0055,Ibrahim Mansour,27/07/1975,Male,AB-,19/08/2025,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Al Wakra Family Clinic
+V00033,P0023,Mohammed Haddad,11-04-1960,male,O-,23/06/2025,Type 2 diabetes,E11.9,None,Metformin 500 mg,Al Wakra Family Clinic
+V00097,P0038,Mariam Mansour,1988-01-01,m,AB-,2025/06/13 10:30:00,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Doha Care Clinic
+V00150,P0062,Omar Karim,17/05/1963,M,O-,2022/01/14 10:30:00,Asthma,J45.909,Peanuts,Salbutamol inhaler,Al Wakra Family Clinic
+V00011,P0037,Amina Saleh,31-01-1967,F,A-,26/05/2022,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Al Wakra Family Clinic
+V00331,P0066,Mariam Al Naimi,1966-02-03,female,AB+,09/06/2023,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Al Wakra Family Clinic
+V00378,P0013,Layla Karim,20-02-2008,F,B+,2023/11/09 10:30:00,Hypertension,I10,Peanuts,Amlodipine 5 mg,Doha Care Clinic
+V00228,P0006,Yousef Ahmed,13-03-1980,F,A-,2022-02-03,Type 2 diabetes,,Penicillin,Metformin 500 mg,Doha Care Clinic
+V00216,P0108,Khalid Nasser,21-04-1952,male,AB+,2022-12-09,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,West Bay Medical Center
+V00178,P0108,Khalid Nasser,21/04/1952,male,AB+,20/05/2022,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Doha Care Clinic
+V00243,,Ibrahim Haddad,01-05-2031,M,B-,26/09/2023,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00530,P0082,Fatima Hassan,1971/01/27 10:30:00,male,B-,15/02/2023,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00478,P0026,Hassan Khalid,19-07-1983,Male,A+,28/08/2025,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,West Bay Medical Center
+V00278,P0074,Hassan Al Sulaiti,1953-12-25,m,A+,2023/01/08 10:30:00,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,West Bay Medical Center
+V00350,P0075,Hassan Mansour,10/09/1988,F,O-,01-08-2022,Hypertension,I10,Peanuts,Amlodipine 5 mg,West Bay Medical Center
+V00497,P0065,Mariam Nasser,13-11-1963,Female,B+,2025/12/29 10:30:00,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00214,P0083,Yousef Al Naimi,23/02/1954,Female,AB-,2024/09/29 10:30:00,Hypertension,I10,Peanuts,Amlodipine 5 mg,Doha Care Clinic
+V00301,P0048,Amina Farouk,25/08/1997,Male,A+,2022/05/15 10:30:00,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,West Bay Medical Center
+V00024,P0102,Huda Mansour,1980/04/12 10:30:00,m,O+,2026/06/02 10:30:00,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Doha Care Clinic
+V00557,P0080,Fatima Rahman,1989/08/20 10:30:00,f,B-,2024-09-19,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Doha Care Clinic
+V00155,P0008,Huda Farouk,14/03/1961,m,A-,18/03/2025,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Doha Care Clinic
+V00509,P0116,Ibrahim Rahman,14/02/2001,m,b +,2022/01/08 10:30:00,Hypertension,I10,None,Amlodipine 5 mg,Doha Care Clinic
+V00152,P0088,Fatima Rahman,2004/12/18 10:30:00,m,AB-,2025-11-14,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00115,P0040,Fatima Hassan,22-04-1972,Female,B-,12-12-2024,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00283,P0014,Ibrahim Khalid,1991/06/22 10:30:00,m,O+,15-12-2022,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00169,P0018,Huda Khalid,06/10/1973,Male,B-,07/06/2023,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00112,P0058,Yousef Al Sulaiti,12-04-1975,Female,O-,2022/06/29 10:30:00,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00079,P0065,Mariam Nasser,1963-11-13,Female,B+,2024-07-11,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00296,P0119,Hassan Hassan,1971-08-27,m,AB-,2026/05/29 10:30:00,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,West Bay Medical Center
+V00184,P0068,Amina Ahmed,27/11/1967,f,O-,09-03-2023,Type 2 diabetes,E11.9,None,Metformin 500 mg,Al Wakra Family Clinic
+V00401,P0049,Omar Khalid,1956-02-24,F,B-,21/05/2024,Asthma,J45.909,Penicillin,Salbutamol inhaler,Al Wakra Family Clinic
+V00042,P0051,Fatima Al Sulaiti,1968/04/29 10:30:00,female,B-,04-07-2022,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00090,P0078,Mariam Haddad,1984/01/06 10:30:00,Male,O+,17-04-2022,Hypertension,I10,Penicillin,Amlodipine 5 mg,Al Wakra Family Clinic
+V00469,,Amina Saleh,1967-01-31,F,A-,26/11/2024,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00193,P0050,Khalid Nasser,02/02/1972,M,A-,17/03/2025,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,West Bay Medical Center
+V00068,P0086,Ibrahim Khalid,1996-06-20,f,A+,28-03-2023,Asthma,J45.909,Peanuts,Salbutamol inhaler,West Bay Medical Center
+V00377,P0033,Mohammed Nasser,1999-09-11,Female,B-,2023-01-07,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00463,P0114,Layla Nasser,1998/04/13 10:30:00,f,AB-,2026-06-15,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,West Bay Medical Center
+V00300,P0094,Fatima Farouk,1991-10-20,m,A+,20-01-2023,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00482,,Mariam Saleh,27/05/2002,M,AB+,25/06/2025,Type 2 diabetes,E11.9,Penicillin,Metformin 500 mg,Al Wakra Family Clinic
+V00126,P0012,Aisha Khalid,19-03-1983,female,B-,09/05/2023,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,West Bay Medical Center
+V00514,P0009,Sara Haddad,2005-06-28,female,B-,23-08-2023,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Doha Care Clinic
+V00498,P0005,Layla Al Naimi,1964-04-28,m,O-,07-07-2023,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Doha Care Clinic
+V00436,P0009,Sara Haddad,2005-06-28,female,B-,23-02-2022,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,West Bay Medical Center
+V00354,P0042,Ibrahim Hassan,1989-10-03,F,A+,2026/04/08 10:30:00,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,West Bay Medical Center
+V00382,P0023,Mohammed Haddad,1960-04-11,male,O-,2026/09/20 10:30:00,Common cold,J06.9,None,Paracetamol 500 mg,Doha Care Clinic
+V00065,P0054,Hassan Farouk,1973/10/17 10:30:00,Male,O-,2022/11/19 10:30:00,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00056,P0049,Omar Khalid,1956/02/24 10:30:00,F,B-,18-07-2024,High cholesterol,E78.5,Penicillin,Atorvastatin 20 mg,Doha Care Clinic
+V00284,P0077,Mariam Mansour,06-02-1986,male,B+,2025-12-13,High cholesterol,E78.5,None,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00434,P0051,Fatima Al Sulaiti,29-04-1968,female,B-,2026/05/19 10:30:00,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00516,P0093,Yousef Karim,1969/03/12 10:30:00,F,AB+,2024/05/24 10:30:00,Common cold,J06.9,Penicillin,Paracetamol 500 mg,Al Wakra Family Clinic
+V00274,P0023,Mohammed Haddad,1960-04-11,male,O-,14/02/2022,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00362,P0001,Khalid Al Naimi,04-09-1974,Female,B-,24/12/2025,Asthma,J45.909,None,Salbutamol inhaler,Doha Care Clinic
+V00329,P0026,Hassan Khalid,19-07-1983,Male,A+,28/08/2023,Asthma,J45.909,Peanuts,Salbutamol inhaler,Doha Care Clinic
+V00231,P0001,Khalid Al Naimi,2031/05/01 10:30:00,Female,B-,09/06/2022,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00215,P0002,Khalid Haddad,05/12/1998,F,AB+,04-02-2023,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00490,P0036,Amina Ahmed,18/05/1998,Male,AB-,01-12-2023,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00117,P0020,Ibrahim Khalid,18/09/1995,f,A-,2022/11/28 10:30:00,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00553,P0068,Amina Ahmed,27-11-1967,f,O-,2024-11-24,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00599,P0074,Hassan Al Sulaiti,25/12/1953,m,A+,27-06-2022,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,West Bay Medical Center
+V00343,P0071,Fatima Al Naimi,1960-05-07,male,B+,2026/06/10 10:30:00,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,West Bay Medical Center
+V00588,P0076,Fatima Haddad,07-03-1961,male,O+,21-11-2025,Asthma,J45.909,Sulfa drugs,Salbutamol inhaler,West Bay Medical Center
+V00210,P0097,Ibrahim Rahman,1969-09-08,male,AB+,2025-03-28,Common cold,J06.9,Penicillin,Paracetamol 500 mg,West Bay Medical Center
+V00069,P0098,Mohammed Saleh,1980/02/27 10:30:00,m,B+,2023-11-03,Asthma,J45.909,Penicillin,Salbutamol inhaler,Doha Care Clinic
+V00180,P0037,Amina Saleh,31-01-1967,F,A-,10/07/2026,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Doha Care Clinic
+V00376,P0027,Fatima Rahman,1951/10/01 10:30:00,F,O-,10-03-2023,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00564,P0109,Hassan Hassan,2003/02/13 10:30:00,Female,A-,2023/11/18 10:30:00,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00042,P0051,Fatima Al Sulaiti,1968/04/29 10:30:00,female,B-,04-07-2022,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00477,P0071,Fatima Al Naimi,1960/05/07 10:30:00,male,B+,24-06-2022,Iron-deficiency anemia,D50.9,Peanuts,Ferrous sulfate 200 mg,West Bay Medical Center
+V00375,P0048,Amina Farouk,25/08/1997,Male,A+,2022-09-10,Type 2 diabetes,E11.9,Peanuts,Metformin 500 mg,Doha Care Clinic
+V00393,P0027,Fatima Rahman,01/10/1951,F,O-,18-08-2025,High cholesterol,E78.5,None,Atorvastatin 20 mg,Doha Care Clinic
+V00114,P0064,Ahmed Mansour,1968/11/05 10:30:00,Female,A-,2025/02/08 10:30:00,Type 2 diabetes,E11.9,None,Metformin 500 mg,Al Wakra Family Clinic
+V00053,P0047,Ahmed Karim,1978-02-19,M,A+,14/07/2024,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,West Bay Medical Center
+V00373,P0057,Khalid Khalid,23-09-1973,F,A-,2026-08-11,Iron-deficiency anemia,D50.9,Sulfa drugs,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00528,P0112,Mariam Rahman,21/06/1959,m,O-,2023-02-25,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Al Wakra Family Clinic
+V00057,P0071,Fatima Al Naimi,07/05/1960,male,B+,30-05-2024,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Doha Care Clinic
+V00344,P0106,Amina Haddad,06/04/1960,Female,AB-,26-09-2026,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,Al Wakra Family Clinic
+V00083,P0085,Noor Ahmed,29/03/1963,M,A-,2025-05-03,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,Al Wakra Family Clinic
+V00213,P0089,Amina Rahman,03-04-1973,Female,O+,06/05/2024,Hypertension,I10,Peanuts,Amlodipine 5 mg,West Bay Medical Center
+V00556,P0094,Fatima Farouk,1991/10/20 10:30:00,m,A+,06-05-2022,High cholesterol,E78.5,None,Atorvastatin 20 mg,West Bay Medical Center
+V00277,P0046,Amina Khalid,14/01/1967,male,B-,2024/02/14 10:30:00,Hypertension,I10,None,Amlodipine 5 mg,West Bay Medical Center
+V00437,P0084,Omar Rahman,1987/03/08 10:30:00,Female,AB+,15/04/2023,Iron-deficiency anemia,D50.9,Penicillin,Ferrous sulfate 200 mg,West Bay Medical Center
+V00304,P0058,Yousef Al Sulaiti,12-04-1975,Female,O-,2025/04/16 10:30:00,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00034,P0033,Mohammed Nasser,1999-09-11,Female,B-,06-07-2026,Common cold,J06.9,None,Paracetamol 500 mg,Al Wakra Family Clinic
+V00544,P0026,Hassan Khalid,1983/07/19 10:30:00,Male,A+,2023/09/06 10:30:00,Hypertension,I10,Peanuts,Amlodipine 5 mg,Al Wakra Family Clinic
+V00341,P0007,Khalid Mansour,09/11/1980,male,A+,01-02-2025,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00395,P0082,Fatima Hassan,1971/01/27 10:30:00,male,B-,25/06/2022,Type 2 diabetes,E11.9,None,Metformin 500 mg,Al Wakra Family Clinic
+V00073,P0040,Fatima Hassan,1972/04/22 10:30:00,Female,B-,2023/03/30 10:30:00,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Doha Care Clinic
+V00002,P0096,Mohammed Mansour,1976/10/15 10:30:00,m,AB+,22-12-2023,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00476,P0065,Mariam Nasser,13/11/1963,Female,B+,2024/06/03 10:30:00,Type 2 diabetes,E11.9,None,Metformin 500 mg,Al Wakra Family Clinic
+V00380,P0104,Ibrahim Haddad,27-02-1956,M,A+,2022-12-12,Asthma,J45.909,None,Salbutamol inhaler,Al Wakra Family Clinic
+V00190,P0035,Ahmed Mansour,10-05-1956,Female,O+,28/12/2025,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,West Bay Medical Center
+V00416,P0034,Omar Karim,14-08-2006,M,B-,21/07/2025,Type 2 diabetes,E11.9,None,Metformin 500 mg,West Bay Medical Center
+V00142,P0018,Huda Khalid,06/10/1973,Male,B-,2023-05-12,Type 2 diabetes,E11.9,Sulfa drugs,Metformin 500 mg,West Bay Medical Center
+V00475,P0065,Mariam Nasser,13/11/1963,Female,B+,2022-11-10,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00466,P0014,Ibrahim Khalid,22/06/1991,m,O+,31-01-2025,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,West Bay Medical Center
+V00025,P0063,Yousef Saleh,08-06-1961,M,O+,08-01-2025,Hypertension,I10,None,Amlodipine 5 mg,Al Wakra Family Clinic
+V00585,P0016,Fatima Saleh,08/01/1974,F,B-,21/10/2023,Common cold,J06.9,Peanuts,Paracetamol 500 mg,Doha Care Clinic
+V00471,P0075,Hassan Mansour,10/09/1988,F,O-,2023/06/09 10:30:00,Hypertension,I10,Peanuts,Amlodipine 5 mg,Doha Care Clinic
+V00166,P0039,Ahmed Haddad,2008-08-16,F,A+,14/02/2025,Asthma,J45.909,Penicillin,Salbutamol inhaler,West Bay Medical Center
+V00313,P0029,Amina Hassan,16-10-1997,Male,B+,2025/10/07 10:30:00,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,West Bay Medical Center
+V00492,P0070,Layla Hassan,16/01/1975,female,AB+,29/08/2025,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,West Bay Medical Center
+V00017,P0042,Ibrahim Hassan,1989-10-03,F,A+,23/10/2026,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,Al Wakra Family Clinic
+V00093,P0004,Hassan Karim,2008-04-21,m,B-,2026/09/15 10:30:00,Asthma,J45.909,Penicillin,Salbutamol inhaler,Doha Care Clinic
+V00245,P0116,Ibrahim Rahman,2001/02/14 10:30:00,m,O-,11-07-2026,Type 2 diabetes,E11.9,None,Metformin 500 mg,Al Wakra Family Clinic
+V00303,P0036,Amina Ahmed,18-05-1998,Male,AB-,31-10-2024,Asthma,J45.909,None,Salbutamol inhaler,West Bay Medical Center
+V00368,P0013,Layla Karim,2008-02-20,F,B+,2025-07-07,Hypertension,I10,Peanuts,Amlodipine 5 mg,Doha Care Clinic
+V00136,P0061,Layla Khalid,1989-08-22,m,A+,16/12/2025,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00224,P0051,Fatima Al Sulaiti,29/04/1968,female,B-,2025/03/28 10:30:00,Iron-deficiency anemia,D50.9,None,Ferrous sulfate 200 mg,West Bay Medical Center
+V00417,P0069,Ibrahim Ahmed,1952/02/15 10:30:00,Female,AB+,2023/05/24 10:30:00,Type 2 diabetes,E11.9,None,Metformin 500 mg,Doha Care Clinic
+V00013,P0096,Mohammed Mansour,1976/10/15 10:30:00,m,AB+,2024-06-18,High cholesterol,E78.5,Peanuts,Atorvastatin 20 mg,Al Wakra Family Clinic
+V00572,P0014,Ibrahim Khalid,22-06-1991,m,O+,2023-03-24,Hypertension,I10,Sulfa drugs,Amlodipine 5 mg,Al Wakra Family Clinic
+V00086,P0107,Layla Mansour,1965-01-20,F,B+,2025/09/17 10:30:00,Common cold,J06.9,None,Paracetamol 500 mg,West Bay Medical Center
+V00247,P0087,Ibrahim Hassan,1990-12-14,Male,AB-,2023-04-13,Common cold,,Sulfa drugs,Paracetamol 500 mg,Doha Care Clinic
+V00508,P0023,Mohammed Haddad,1960-04-11,male,O-,2024/05/09 10:30:00,Common cold,J06.9,None,Paracetamol 500 mg,Al Wakra Family Clinic
+V00464,P0028,Ibrahim Al Naimi,1971-08-11,F,A-,27/07/2022,High cholesterol,E78.5,Sulfa drugs,Atorvastatin 20 mg,West Bay Medical Center
+V00101,P0005,Layla Al Naimi,28/04/1964,m,O-,31/03/2022,Asthma,J45.909,None,Salbutamol inhaler,Doha Care Clinic
+V00491,P0112,Mariam Rahman,21/06/1959,m,O-,04/05/2024,Common cold,J06.9,Sulfa drugs,Paracetamol 500 mg,West Bay Medical Center
