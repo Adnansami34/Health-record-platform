@@ -19,8 +19,8 @@ from datetime import date, datetime, timedelta
 
 random.seed(42)  # same fake data every time you run it
 
-FIRST = ["Mohammed", "Ahmed", "Omar", "Khalid", "Yousef", "Ali", "Hassan", "Ibrahim",
-         "Layla", "Sara", "Fatima", "Aisha", "Noor", "Mariam", "Huda", "Amina"]
+MALE_NAMES = ["Mohammed", "Ahmed", "Omar", "Khalid", "Yousef", "Ali", "Hassan", "Ibrahim"]
+FEMALE_NAMES = ["Layla", "Sara", "Fatima", "Aisha", "Noor", "Mariam", "Huda", "Amina"]
 LAST = ["Al Naimi", "Hassan", "Khalid", "Ahmed", "Al Sulaiti", "Mansour", "Saleh",
         "Rahman", "Farouk", "Nasser", "Haddad", "Karim"]
 CLINICS = ["Doha Care Clinic", "Al Wakra Family Clinic", "West Bay Medical Center"]
@@ -36,7 +36,8 @@ DIAGNOSES = [
     ("Common cold", "J06.9", "Paracetamol 500 mg"),
 ]
 ALLERGIES = ["None", "None", "None", "Penicillin", "Peanuts", "Sulfa drugs"]
-GENDERS = ["M", "F", "Male", "Female", "male", "female", "m", "f"]
+MALE_WRITINGS = ["M", "Male", "male", "m"]       # the same gender, written 4 ways
+FEMALE_WRITINGS = ["F", "Female", "female", "f"]
 
 
 def random_date(start_year, end_year):
@@ -54,11 +55,13 @@ def messy_date(d):
 # 120 fake patients
 patients = []
 for i in range(1, 121):
+    is_female = random.random() < 0.5
+    first = random.choice(FEMALE_NAMES if is_female else MALE_NAMES)
     patients.append({
         "id": f"P{i:04d}",
-        "name": f"{random.choice(FIRST)} {random.choice(LAST)}",
+        "name": f"{first} {random.choice(LAST)}",
         "dob": random_date(1950, 2010),
-        "gender": random.choice(GENDERS),
+        "gender": random.choice(FEMALE_WRITINGS if is_female else MALE_WRITINGS),
         "blood": random.choice(BLOOD),
         "allergy": random.choice(ALLERGIES),
     })
