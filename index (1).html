@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HEALTH RECORD</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    height: 70px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    width: 38px;
+    height: 38px;
+    background: #1769e0;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.role {
+    background: #edf4ff;
+    color: #1769e0;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.user-name {
+    font-weight: 600;
+}
+
+/* ================= LAYOUT ================= */
+
+.layout {
+    display: flex;
+    min-height: calc(100vh - 70px);
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 240px;
+    background: #101828;
+    padding: 25px 15px;
+    color: #aeb8ca;
+}
+
+.menu-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 12px;
+    color: #667085;
+}
+
+.menu {
+    padding: 13px 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu:hover {
+    background: #1d2939;
+    color: white;
+}
+
+.menu.active {
+    background: #1769e0;
+    color: white;
+}
+
+/* ================= MAIN ================= */
+
+.main {
+    flex: 1;
+    padding: 30px;
+    max-width: 1500px;
+}
+
+.page-title {
+    font-size: 29px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #667085;
+    margin-bottom: 25px;
+}
+
+/* ================= CARDS ================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(16,24,40,0.04);
+}
+
+.card-title {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.stat-label {
+    color: #667085;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.stat {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+/* ================= PROFILE ================= */
+
+.profile-section {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    background: #e0edff;
+    color: #1769e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.profile-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.profile-details {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.detail {
+    background: #f8fafc;
+    padding: 13px;
+    border-radius: 9px;
+}
+
+.detail-label {
+    color: #667085;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    font-weight: bold;
+}
+
+/* ================= CRITICAL ================= */
+
+.critical {
+    background: #fff7f7;
+    border: 1px solid #fecaca;
+}
+
+.critical-title {
+    color: #b42318;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.alert-item {
+    margin-bottom: 13px;
+}
+
+.alert-label {
+    color: #667085;
+    font-size: 12px;
+}
+
+.alert-value {
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+/* ================= CONTENT GRID ================= */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* ================= TIMELINE ================= */
+
+.timeline {
+    border-left: 2px solid #dbe4f0;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    background: #1769e0;
+    border-radius: 50%;
+}
+
+.timeline-title {
+    font-weight: bold;
+}
+
+.timeline-date {
+    color: #667085;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* ================= DOCUMENTS ================= */
+
+.document {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.document:last-child {
+    border-bottom: none;
+}
+
+.document-name {
+    font-weight: 600;
+}
+
+.document-type {
+    color: #667085;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.view-button {
+    background: #eef2f7;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.view-button:hover {
+    background: #dbe4f0;
+}
+
+/* ================= AI SUMMARY ================= */
+
+.ai-summary {
+    background: #f0f7ff;
+    border: 1px solid #bfdbfe;
+    padding: 17px;
+    border-radius: 10px;
+    line-height: 1.7;
+}
+
+.ai-label {
+    color: #1769e0;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* ================= HOSPITAL LOOKUP ================= */
+
+.search-section {
+    margin-top: 20px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    width: 400px;
+    padding: 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.search-button {
+    background: #1769e0;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ================= BUTTON ================= */
+
+.button {
+    background: #1769e0;
+    color: white;
+    border: none;
+    padding: 11px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #1257bd;
+}
+
+/* ================= LOGIN ================= */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#eef6ff,#f8fafc);
+}
+
+.login-box {
+    width: 420px;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(16,24,40,.12);
+}
+
+.login-box h1 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.input-group {
+    margin-top: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+}
+
+.login-button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px) {
+
+    .cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .profile-section,
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:700px) {
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .menu {
+        white-space: nowrap;
+    }
+
+    .main {
+        padding: 18px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-details {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+}
+</style>
+
+<style>
+/* added: working menu views */
+.menu{cursor:pointer}
+.stack{display:grid;gap:20px}
+.xlist{list-style:none;margin:8px 0 0;padding:0}
+.xlist li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #e3e9f2}
+.xrow{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid #e3e9f2}
+.xbtn{border:0;background:#1769e0;color:#fff;border-radius:20px;padding:8px 16px;font:inherit;cursor:pointer}
+.xbtn.off{background:#8a97ab}
+#psel{padding:6px 10px;border:1px solid #cfdcf3;border-radius:10px;font:inherit;background:#fff;max-width:230px}
+.h3x{font-weight:700;margin:0 0 6px}
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="logo">
+        <div class="logo-icon">+</div>
+        HEALTH RECORD
+    </div>
+
+    <div class="header-right">
+        <a class="role" href="app.html" style="text-decoration:none;background:#1a63e6;color:#fff;">Open database-driven demo &rarr;</a>
+        <span class="role">PATIENT PORTAL</span>
+        <span class="user-name">Mohammed Ahmed</span>
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     LAYOUT
+===================================================== -->
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="menu-title">Main Menu</div>
+
+        <div class="menu active">
+            🏠 Dashboard
+        </div>
+
+        <div class="menu">
+            ❤️ My Health Record
+        </div>
+
+        <div class="menu">
+            📄 Medical Documents
+        </div>
+
+        <div class="menu">
+            🔐 Access Control
+        </div>
+
+        <div class="menu">
+            🚨 Emergency Profile
+        </div>
+
+        <div class="menu">
+            📋 Access History
+        </div>
+
+        <br>
+
+        <div class="menu-title">Account</div>
+
+        <div class="menu">
+            ⚙️ Settings
+        </div>
+
+        <div class="menu">
+            🚪 Logout
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main">
+
+        <h1 class="page-title">
+            Welcome, Mohammed
+        </h1>
+
+        <p class="subtitle">
+            Your health record is organized in one secure place. (Prototype with synthetic data.)
+        </p>
+
+
+        <!-- STAT CARDS -->
+
+        <section class="cards">
+
+            <div class="card">
+                <div class="stat-label">
+                    Blood Group
+                </div>
+
+                <div class="stat">
+                    B+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="stat-label">
+                    Conditions
+                </div>
+
+                <div class="stat">
+                    2
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="stat-label">
+                    Surgeries
+                </div>
+
+                <div class="stat">
+                    1
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="stat-label">
+                    Documents
+                </div>
+
+                <div class="stat">
+                    8
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- PROFILE + CRITICAL PROFILE -->
+
+        <section class="profile-section">
+
+            <div class="card">
+
+                <div class="profile-header">
+
+                    <div class="avatar">
+                        MA
+                    </div>
+
+                    <div>
+
+                        <div class="profile-name">
+                            Mohammed Ahmed
+                        </div>
+
+                        <div class="muted">
+                            Patient ID: HR-000124
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-details">
+
+                    <div class="detail">
+
+                        <div class="detail-label">
+                            Date of Birth
+                        </div>
+
+                        <div class="detail-value">
+                            12 April 1995
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <div class="detail-label">
+                            Gender
+                        </div>
+
+                        <div class="detail-value">
+                            Male
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <div class="detail-label">
+                            Mobile
+                        </div>
+
+                        <div class="detail-value">
+                            +000 0000 0000 (sample)
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <div class="detail-label">
+                            Blood Group
+                        </div>
+
+                        <div class="detail-value">
+                            B+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <div class="detail-label">
+                            Emergency Contact
+                        </div>
+
+                        <div class="detail-value">
+                            Aisha Ahmed
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <div class="detail-label">
+                            Record Status
+                        </div>
+
+                        <div class="detail-value">
+                            Active
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CRITICAL -->
+
+            <div class="card critical">
+
+                <div class="critical-title">
+                    🚨 Critical Health Profile
+                </div>
+
+
+                <div class="alert-item">
+
+                    <div class="alert-label">
+                        Critical Allergy
+                    </div>
+
+                    <div class="alert-value">
+                        Penicillin
+                    </div>
+
+                </div>
+
+
+                <div class="alert-item">
+
+                    <div class="alert-label">
+                        Major Condition
+                    </div>
+
+                    <div class="alert-value">
+                        Hypertension
+                    </div>
+
+                </div>
+
+
+                <div class="alert-item">
+
+                    <div class="alert-label">
+                        Previous Surgery
+                    </div>
+
+                    <div class="alert-value">
+                        Appendectomy
+                    </div>
+
+                </div>
+
+
+                <div class="alert-item">
+
+                    <div class="alert-label">
+                        Emergency Contact
+                    </div>
+
+                    <div class="alert-value">
+                        Aisha Ahmed
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TIMELINE + DOCUMENTS -->
+
+        <section class="content-grid">
+
+
+            <!-- MEDICAL TIMELINE -->
+
+            <div class="card">
+
+                <div class="card-title">
+                    Medical History
+                </div>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-title">
+                            Hypertension diagnosed
+                        </div>
+
+                        <div class="timeline-date">
+                            15 June 2021
+                        </div>
+
+                        <p class="muted">
+                            Active condition requiring regular monitoring.
+                        </p>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-title">
+                            Appendectomy
+                        </div>
+
+                        <div class="timeline-date">
+                            12 February 2018
+                        </div>
+
+                        <p class="muted">
+                            Hyderabad City Hospital
+                        </p>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-title">
+                            Appendicitis diagnosed
+                        </div>
+
+                        <div class="timeline-date">
+                            10 February 2018
+                        </div>
+
+                        <p class="muted">
+                            Condition resolved after surgical treatment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DOCUMENTS -->
+
+            <div class="card">
+
+                <div class="card-title">
+                    Medical Documents
+                </div>
+
+
+                <div class="document">
+
+                    <div>
+                        <div class="document-name">
+                            Appendectomy Discharge Summary
+                        </div>
+
+                        <div class="document-type">
+                            Discharge Summary
+                        </div>
+                    </div>
+
+                    <button class="view-button">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="document">
+
+                    <div>
+                        <div class="document-name">
+                            Blood Test Report
+                        </div>
+
+                        <div class="document-type">
+                            Laboratory
+                        </div>
+                    </div>
+
+                    <button class="view-button">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="document">
+
+                    <div>
+                        <div class="document-name">
+                            Prescription
+                        </div>
+
+                        <div class="document-type">
+                            Prescription
+                        </div>
+                    </div>
+
+                    <button class="view-button">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="document">
+
+                    <div>
+                        <div class="document-name">
+                            CT Scan Report
+                        </div>
+
+                        <div class="document-type">
+                            Imaging
+                        </div>
+                    </div>
+
+                    <button class="view-button">
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI SUMMARY -->
+
+        <section class="card" style="margin-top:20px">
+
+            <div class="card-title">
+                AI Health Summary
+            </div>
+
+            <div class="ai-summary">
+
+                <div class="ai-label">
+                    ✨ Record Summary
+                </div>
+
+                This patient's record contains a history of
+                hypertension and a previous appendectomy.
+                The appendectomy was performed at Hyderabad
+                City Hospital in February 2018.
+
+                The patient has a documented penicillin allergy
+                and a blood group of B+.
+
+                <br><br>
+
+                <b>
+                    Original medical documents remain the
+                    source of truth.
+                </b>
+
+            </div>
+
+            <p class="muted" style="margin-top:10px;font-size:12px">
+
+                AI-generated summary for information organization.
+                Not a diagnosis or medical advice.
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="data.js"></script>
+<script>
+(function(){
+var P=window.PATIENTS||[];
+var main=document.querySelector("main.main");
+if(!P.length||!main)return;
+var S={view:"dashboard",i:0,log:[],em:true,share:false,out:false};
+var VIEWS=["dashboard","record","documents","access","emergency","history","settings","logout"];
+var TITLES={dashboard:"Dashboard",record:"My Health Record",documents:"Medical Documents",access:"Access Control",emergency:"Emergency Profile",history:"Access History",settings:"Settings",logout:"Logout"};
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function names(a){return a.length?a.map(function(x){return esc(x.en)}).join(", "):"None recorded"}
+function stat(l,v){return '<div class="card"><div class="stat-label">'+l+'</div><div class="stat">'+v+'</div></div>'}
+function det(l,v){return '<div class="detail"><div class="detail-label">'+l+'</div><div class="detail-value">'+v+'</div></div>'}
+function alertItem(l,v){return '<div class="alert-item"><div class="alert-label">'+l+'</div><div class="alert-value">'+v+'</div></div>'}
+function lst(items){return items.length?'<ul class="xlist">'+items.join("")+'</ul>':'<p class="muted">None recorded</p>'}
+function row(a,b){return '<li><span>'+a+'</span><span class="muted">'+b+'</span></li>'}
+function critical(p){return '<div class="card critical"><div class="critical-title">🚨 Critical Health Profile</div>'+alertItem("Critical Allergy",names(p.allergy))+alertItem("Major Conditions",names(p.cond))+alertItem("Current Medicines",names(p.meds))+'</div>'}
+function initials(n){return n.split(" ").map(function(w){return w[0]}).slice(0,2).join("").toUpperCase()}
+var V={
+dashboard:function(p){
+ return '<section class="cards">'+stat("Blood Group",esc(p.blood))+stat("Conditions",p.cond.length)+stat("Medicines",p.meds.length)+stat("Allergies",p.allergy.length||"None")+'</section>'
+ +'<section class="profile-section"><div class="card"><div class="profile-header"><div class="avatar">'+initials(p.name.en)+'</div><div><div class="profile-name">'+esc(p.name.en)+'</div><div class="muted">Patient ID: '+esc(p.id)+'</div></div></div>'
+ +'<div class="profile-details">'+det("Age",p.age+" years")+det("Blood Group",esc(p.blood))+det("Allergy",names(p.allergy))+det("Last Visit",p.visits[0].d)+det("Latest Diagnosis",esc(p.visits[0].en))+det("Record Status","Active")+'</div></div>'+critical(p)+'</section>';},
+record:function(p){
+ return '<div class="stack"><div class="card"><div class="h3x">Conditions</div>'+lst(p.cond.map(function(c){return row(esc(c.en),"since "+c.s)}))+'</div>'
+ +'<div class="card"><div class="h3x">Allergies</div>'+lst(p.allergy.map(function(a){return row(esc(a.en),"")}))+'</div>'
+ +'<div class="card"><div class="h3x">Medicines</div>'+lst(p.meds.map(function(m){return row(esc(m.en),"")}))+'</div></div>';},
+documents:function(p){
+ return '<div class="card"><div class="h3x">Recent visit summaries</div>'+lst(p.visits.map(function(v){return row(esc(v.en)+" visit summary",v.d)}))+'<p class="muted" style="margin-top:12px">Prototype: shows the 3 latest visits from the database. File upload is a future step.</p></div>';},
+access:function(p){
+ function r(id,t,sub,on){return '<div class="xrow"><div><strong>'+t+'</strong><div class="muted">'+sub+'</div></div><button class="xbtn'+(on?"":" off")+'" data-toggle="'+id+'">'+(on?"ON":"OFF")+'</button></div>'}
+ return '<div class="card"><div class="h3x">Who can see your record</div>'
+ +r("em","Emergency access","Doctors see critical information only. Every access is logged.",S.em)
+ +r("share","Full record sharing","Off by default. A doctor needs your consent for the complete record.",S.share)+'</div>';},
+emergency:function(p){
+ if(!S.em)return '<div class="card"><strong>Emergency access is switched off.</strong><p class="muted">Turn it on in Access Control.</p></div>';
+ return '<div class="stack">'+critical(p)+'<p class="muted">Doctors see only this critical information. Visit history, documents and contact details stay hidden. This view was logged.</p></div>';},
+history:function(p){
+ var items=S.log.map(function(e){return row("Emergency view opened for "+esc(e.name)+" ("+esc(e.id)+")",e.t.toLocaleTimeString("en-GB"))});
+ return '<div class="card"><div class="h3x">Access history (this session)</div>'+(items.length?'<ul class="xlist">'+items.join("")+'</ul>':'<p class="muted">No emergency access yet. Open Emergency Profile to create an entry.</p>')+'</div>';},
+settings:function(p){
+ return '<div class="card"><div class="h3x">Prototype settings</div><p class="muted">Data source: data.js, exported from the cleaned database (health_record.db). '+P.length+' synthetic patients. Switch patient using the list at the top. For the English/Arabic version, open the database-driven demo.</p></div>';},
+logout:function(p){
+ return '<div class="card"><strong>You are logged out (demo).</strong><p><button class="xbtn" data-act="login">Log back in</button></p></div>';}
+};
+function logEm(){var p=P[S.i];if(S.em)S.log.unshift({t:new Date(),id:p.id,name:p.name.en});S.log=S.log.slice(0,10)}
+function render(){
+ var p=P[S.i];
+ var v=S.out?"logout":S.view;
+ [].forEach.call(document.querySelectorAll(".menu[data-view]"),function(m){m.classList.toggle("active",m.dataset.view===v)});
+ var un=document.querySelector(".user-name");if(un)un.textContent=S.out?"Logged out":p.name.en;
+ main.innerHTML='<h1 class="page-title">'+TITLES[v]+'</h1><p class="subtitle">Synthetic data from the pipeline database. Prototype only.</p>'+V[v](p);
+}
+function go(v){S.out=(v==="logout");S.view=v;if(v==="emergency")logEm();render()}
+// menu items become buttons
+[].forEach.call(document.querySelectorAll(".menu"),function(m,i){m.dataset.view=VIEWS[i];m.setAttribute("role","button");m.tabIndex=0;
+ m.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();go(m.dataset.view)}})});
+// patient selector in the header
+var hr=document.querySelector(".header-right");
+var sel=document.createElement("select");sel.id="psel";sel.setAttribute("aria-label","Patient");
+sel.innerHTML=P.map(function(x,i){return '<option value="'+i+'">'+esc(x.id)+" - "+esc(x.name.en)+"</option>"}).join("");
+if(hr)hr.insertBefore(sel,hr.querySelector(".user-name"));
+document.addEventListener("change",function(e){if(e.target.id==="psel"){S.i=+e.target.value;S.out=false;if(S.view==="emergency")logEm();render()}});
+document.addEventListener("click",function(e){
+ var m=e.target.closest(".menu[data-view]");if(m){go(m.dataset.view);return}
+ var t=e.target.closest("[data-toggle]");if(t){S[t.dataset.toggle]=!S[t.dataset.toggle];render();return}
+ if(e.target.closest('[data-act="login"]')){S.out=false;S.view="dashboard";render()}
+});
+render();
+})();
+</script>
+</body>
+</html>
