@@ -1,6 +1,6 @@
 # Clinic-to-Hub Health Record (prototype)
 
-**Live demo:** https://adnansami34.github.io/Health-record-platform/app.html
+**Live demo:** https://adnansami34.github.io/Health-record-platform/
 
 A prototype data pipeline and patient app that takes messy private-clinic data, cleans it, validates it, and stores it in a structured database. Built as a portfolio project for healthcare data engineering. **All data is synthetic (fake). No real patient data is used.**
 
