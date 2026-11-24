@@ -54,18 +54,32 @@ input:focus,select:focus,textarea:focus,button:focus-visible{outline:2px solid v
 </div>
 <div class="toast" id="toast" role="status"></div>
 <script>
-const KEY='hrp-v1';
+const KEY='hrp-v3';
 const seed=()=>({sel:'HR-000124',log:[{t:Date.now(),who:'System',what:'Sample record loaded'}],patients:[{id:'HR-000124',name:'Mohammed Ahmed',dob:'1995-04-12',gender:'Male',blood:'B+',mobile:'+000 0000 0000',ecName:'Aisha Ahmed',ecPhone:'+000 0000 0001',allergies:['Penicillin'],conditions:[{n:'Hypertension',d:'2021-06-15'}],surgeries:[{n:'Appendectomy',d:'2018-02-12'}],notes:'',docs:[{title:'Appendectomy discharge summary',cat:'Discharge summary',date:'2018-02-14'},{title:'Blood test report',cat:'Laboratory',date:'2024-03-02'},{title:'Prescription',cat:'Prescription',date:'2024-03-05'},{title:'CT scan report',cat:'Imaging',date:'2023-09-18'}],access:[{who:'Dr. Rao, Hyderabad City Hospital',exp:'2027-01-31',revoked:false}]}]});
-let S;try{S=JSON.parse(localStorage.getItem(KEY))||seed()}catch(e){S=seed()}
+const D=(t,c,d)=>({title:t,cat:c,date:d});
+const RAO='Dr. Rao, Hyderabad City Hospital',IYER='Dr. Meera Iyer, Apollo Clinic';
+const sample=[
+['Fatima Khan','1988-09-03','Female','O+',['Dust','Sulfa drugs'],[['Type 2 diabetes','2022-03-10']],[['Caesarean section','2016-07-21']],[D('HbA1c blood test','Laboratory','2025-08-12'),D('Metformin prescription','Prescription','2025-08-14')],[[RAO,'2027-03-31',0]],'Imran Khan'],
+['Rahul Verma','1979-01-25','Male','A+',[],[['Hypertension','2019-11-02'],['High cholesterol','2021-05-18']],[['Angioplasty','2023-02-09']],[D('Lipid profile','Laboratory','2025-06-20'),D('ECG report','Other','2025-06-21'),D('Cardiac discharge summary','Discharge summary','2023-02-12')],[[RAO,'2027-01-15',0],[IYER,'2026-09-30',0]],'Neha Verma'],
+['Priya Nair','2001-03-22','Female','O-',['Peanuts'],[['Iron-deficiency anemia','2024-02-11']],[],[D('Complete blood count','Laboratory','2026-03-05'),D('Iron supplement prescription','Prescription','2026-03-06')],[],'Anil Nair'],
+['Yusuf Hassan','1992-08-08','Male','A-',[],[['Migraine','2018-06-06']],[['Appendectomy','2015-03-17']],[D('MRI brain report','Imaging','2024-09-09'),D('Neurology prescription','Prescription','2024-09-10')],[[IYER,'2026-12-31',1]],'Hana Hassan'],
+['Arjun Reddy','1958-02-19','Male','O+',['Penicillin','Iodine contrast'],[['Coronary artery disease','2017-12-05'],['Type 2 diabetes','2010-07-07']],[['Coronary bypass surgery','2018-01-22'],['Knee replacement','2024-04-16']],[D('Echocardiogram report','Imaging','2025-10-02'),D('Bypass discharge summary','Discharge summary','2018-01-30'),D('HbA1c blood test','Laboratory','2026-02-12'),D('Diabetes prescription','Prescription','2026-02-13')],[[RAO,'2027-05-31',0],[IYER,'2027-05-31',0]],'Kavitha Reddy'],
+['Leila Haddad','1986-08-14','Female','A+',['Shellfish'],[['High cholesterol','2023-04-12']],[],[D('Lipid profile','Laboratory','2026-04-08'),D('Statin prescription','Prescription','2026-04-09')],[[RAO,'2027-02-28',0]],'Samir Haddad'],
+['Karim Mansour','1964-03-27','Male','B+',[],[['Type 2 diabetes','2015-09-14'],['Hypertension','2018-01-20']],[['Cataract surgery','2022-06-11']],[D('HbA1c blood test','Laboratory','2026-05-02'),D('Eye surgery discharge summary','Discharge summary','2022-06-12'),D('Blood pressure prescription','Prescription','2026-05-03')],[],'Rima Mansour'],
+['Anita Rao','1983-09-05','Female','O-',['Latex'],[['Hypothyroidism','2020-02-18']],[['Thyroidectomy','2021-08-05']],[D('Thyroid function test','Laboratory','2026-01-15'),D('Levothyroxine prescription','Prescription','2026-01-16')],[[IYER,'2026-12-31',0]],'Vijay Rao'],
+['Omar Siddiqui','1975-11-30','Male','AB+',['Aspirin'],[['Asthma','2012-05-09']],[['Hernia repair','2019-10-03']],[D('Spirometry report','Laboratory','2025-11-20'),D('Chest X-ray report','Imaging','2025-11-21'),D('Inhaler prescription','Prescription','2025-11-22')],[[RAO,'2026-10-31',0]],'Zara Siddiqui']
+].map((r,i)=>({id:'HR-'+String(125+i).padStart(6,'0'),name:r[0],dob:r[1],gender:r[2],blood:r[3],mobile:'+000 0000 00'+(25+i),ecName:r[9],ecPhone:'+000 0000 01'+(25+i),allergies:r[4],conditions:r[5].map(x=>({n:x[0],d:x[1]})),surgeries:r[6].map(x=>({n:x[0],d:x[1]})),notes:'',docs:r[7],access:r[8].map(x=>({who:x[0],exp:x[1],revoked:!!x[2]}))}));
+const seedAll=()=>{const s=seed();s.patients.push(...sample);s.log[0].what='10 synthetic patients loaded';return s};
+let S;try{S=JSON.parse(localStorage.getItem(KEY))||seedAll()}catch(e){S=seedAll()}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
-let view='dash';
+let view='dash',chat=[],role='Patient',doc='';
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const cur=()=>S.patients.find(p=>p.id===S.sel);
 const fd=d=>d?new Date(d+'T00:00').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'}):'—';
 const log=(who,what)=>{S.log.unshift({t:Date.now(),who,what});save()};
 const toast=m=>{const t=document.getElementById('toast');t.textContent=m;t.style.display='block';setTimeout(()=>t.style.display='none',2400)};
 const today=()=>new Date().toISOString().slice(0,10);
-const views=[['add','+ Add details'],['dash','Dashboard'],['rec','Health record'],['docs','Documents'],['acc','Access control'],['em','Emergency profile'],['hist','Access history']];
+const views=[['add','+ Add details'],['dash','Dashboard'],['rec','Health record'],['docs','Documents'],['bot','Assistant'],['acc','Access control'],['em','Emergency profile'],['hist','Access history']];
 function nav(){document.getElementById('nav').innerHTML='<h1>Health Record</h1>'+views.map(([k,l])=>`<button class="${k=='add'?'add':''}" data-v="${k}" ${view==k?'aria-current="page"':''}>${l}</button>`).join('')}
 function picker(){return `<div class="bar"><label style="margin:0">Patient<select id="pick">${S.patients.map(p=>`<option value="${esc(p.id)}" ${p.id==S.sel?'selected':''}>${esc(p.name)} (${esc(p.id)})</option>`).join('')}</select></label></div>`}
 function summary(p){
@@ -107,6 +121,11 @@ function render(){
  <div class="card"><form id="df" class="grid" novalidate><label>Title *<input name="title"></label><label>Category<select name="cat">${['Laboratory','Imaging','Prescription','Discharge summary','Other'].map(c=>`<option>${c}</option>`).join('')}</select></label><label>Date<input type="date" name="date" value="${today()}" max="${today()}"></label><label>File (optional)<input type="file" name="file"></label><div><button class="btn" type="submit">Add document</button></div></form></div>
  <div class="bar"><input id="q" placeholder="Search documents" style="max-width:260px;margin:0"><select id="cf" style="max-width:200px;margin:0"><option value="">All categories</option>${['Laboratory','Imaging','Prescription','Discharge summary','Other'].map(c=>`<option>${c}</option>`).join('')}</select></div>
  <div class="card" id="dl"></div>`}
+ if(view=='bot'){const acts=p.access.filter(a=>!a.revoked&&a.exp>=today()).map(a=>a.who);if(role=='Doctor'&&!acts.includes(doc))doc=acts[0]||'';
+ h+=`<h2>Record assistant</h2><p class="sub">Ask about this patient’s record. Answers come only from the saved record and always show their source.</p><div class="card"><div class="grid"><label>I am a<select id="role"><option ${role=='Patient'?'selected':''}>Patient</option><option ${role=='Doctor'?'selected':''}>Doctor</option></select></label>${role=='Doctor'&&acts.length?`<label>Signed in as<select id="docsel">${acts.map(a=>`<option ${a==doc?'selected':''}>${esc(a)}</option>`).join('')}</select></label>`:''}</div></div>`;
+ if(role=='Doctor'&&!acts.length)h+=`<div class="card crit"><b>No doctor has active access to this record.</b><br><span class="k">Grant access in Access control first. Doctors can only search records that the patient has shared.</span></div>`;
+ else{const ch=role=='Doctor'?['Allergies','Conditions and surgeries','Latest prescription','List documents']:['What allergies do I have?','Show my blood test','List my documents','Who can see my record?'];
+ h+=`<div class="card"><div id="chat" style="min-height:140px;max-height:360px;overflow-y:auto"></div><div style="margin:10px 0">${ch.map(c=>`<button type="button" class="btn ghost sm" style="margin:0 6px 6px 0" data-q="${esc(c)}">${esc(c)}</button>`).join('')}</div><form id="qf" class="bar" style="margin:0" novalidate><input id="qi" placeholder="Type your question" autocomplete="off" style="margin:0;flex:1"><button class="btn" type="submit">Ask</button></form></div>`}}
  if(view=='acc'){h+=`<h2>Access control</h2><p class="sub">Choose who can see this record and until when. Revoke at any time.</p>
  <div class="card"><form id="af" class="grid" novalidate><label>Doctor or hospital *<input name="who"></label><label>Access expires on *<input type="date" name="exp" min="${today()}"></label><div><button class="btn" type="submit">Grant access</button></div></form></div>
  <div class="card">${p.access.map((a,i)=>{const st=a.revoked?'Revoked':a.exp<today()?'Expired':'Active';return `<div class="row"><div><b>${esc(a.who)}</b><br><span class="k">Until ${fd(a.exp)}</span></div><div><span class="pill ${st=='Active'?'ok':'bad'}">${st}</span>${st=='Active'?`<button class="btn danger" data-rev="${i}">Revoke</button>`:''}</div></div>`}).join('')||'<span class="k">No one has access yet.</span>'}</div>`}
@@ -117,7 +136,30 @@ function render(){
  if(view=='docs'){drawDocs();document.getElementById('df').onsubmit=addDoc;document.getElementById('q').oninput=drawDocs;document.getElementById('cf').onchange=drawDocs}
  if(view=='acc')document.getElementById('af').onsubmit=grant;
  if(view=='em')document.getElementById('bg').onclick=breakGlass;
+ if(view=='bot'){const rs=document.getElementById('role');rs.onchange=()=>{role=rs.value;chat=[];render()};const ds=document.getElementById('docsel');if(ds)ds.onchange=()=>{doc=ds.value;chat=[];render()};const qf=document.getElementById('qf');if(qf){drawChat();qf.onsubmit=ev=>{ev.preventDefault();const i=document.getElementById('qi');ask(i.value);i.value=''}}}
 }
+const R={allergy:/allerg|reaction/,cond:/condition|diagnos|disease|illness|hypertension|diabetes|problems?\b/,surg:/surger|operation|procedure|appendectomy/,blood:/blood (group|type)/,med:/medicine|medication|prescription|drug|tablet/,doc:/\b(documents?|reports?|files?|scans?|ct|mri|x-?ray|labs?|tests?|discharge|imaging)\b/,ec:/emergency contact|next of kin|relative/,acc:/who (can|has)|access|shared|permission/,sum:/overview|everything|full record|record summary|about me/};
+const STOP=new Set('the and what show tell give list all any are has have with for who can you does did about from that this please how'.split(' '));
+function answer(q,p,r){const s=q.toLowerCase(),pt=r=='Patient',o=[];
+ const T=s.split(/[^a-z0-9]+/).filter(t=>t.length>2&&!STOP.has(t));
+ if(R.sum.test(s))summary(p).forEach(x=>o.push(x));
+ if(R.allergy.test(s))o.push([p.allergies.length?(pt?'You have a documented allergy to ':'Allergies: ')+p.allergies.join(', ')+'.':'No allergies are documented.','Patient profile']);
+ const hist=/\bhistory\b/.test(s);
+ if(R.cond.test(s)||hist)o.push([p.conditions.length?(pt?'Your recorded conditions: ':'Conditions: ')+p.conditions.map(c=>c.n+(c.d?' (since '+c.d.slice(0,4)+')':'')).join(', ')+'.':'No conditions are recorded.','Medical history']);
+ if(R.surg.test(s)||hist)o.push([p.surgeries.length?(pt?'Your past surgeries: ':'Surgeries: ')+p.surgeries.map(c=>c.n+(c.d?' ('+fd(c.d)+')':'')).join(', ')+'.':'No surgeries are recorded.','Medical history']);
+ if(R.blood.test(s))o.push(['Blood group: '+(p.blood||'not recorded')+'.','Patient profile']);
+ if(R.ec.test(s))o.push(['Emergency contact: '+p.ecName+(p.ecPhone?', '+p.ecPhone:'')+'.','Patient profile']);
+ if(R.acc.test(s))p.access.length?p.access.forEach(a=>o.push([a.who+': '+(a.revoked?'revoked':a.exp<today()?'expired':'active')+', until '+fd(a.exp)+'.','Access control'])):o.push(['No one has been granted access.','Access control']);
+ if(R.med.test(s)){const rx=p.docs.filter(d=>d.cat=='Prescription');o.push([rx.length?'Prescription on file: '+rx.map(d=>d.title+' ('+fd(d.date)+')').join('; ')+'. The medicine list is inside the document itself.':'No prescription is on file.','Documents'])}
+ else if(!(R.blood.test(s)&&!R.doc.test(s))){const ds=p.docs.filter(d=>T.some(t=>(d.title+' '+d.cat).toLowerCase().includes(t.replace(/s$/,''))));
+  if(ds.length||R.doc.test(s)){const L=ds.length?ds:p.docs;o.push([L.length?(ds.length?'Matching documents: ':'Documents on file: ')+L.map(d=>d.title+' ('+d.cat+', '+fd(d.date)+')').join('; ')+'.':'No documents are on file.','Documents'])}}
+ if(!o.length)o.push(['I couldn’t find that in this record. Try asking about allergies, conditions, surgeries, documents, prescriptions, blood group, or who has access.','']);
+ else if(!pt)o.push(['Check the original documents before making clinical decisions.','']);
+ return o}
+function ask(q){q=q.trim();if(!q)return;const p=cur();const who=role=='Doctor'?(doc||'Doctor'):'Patient';
+ chat.push({me:1,t:q});chat.push({t:answer(q,p,role)});log(who,'Assistant search: “'+q+'”');drawChat()}
+function drawChat(){const c=document.getElementById('chat');if(!c)return;
+ c.innerHTML=chat.length?chat.map(m=>m.me?`<div style="text-align:right;margin:6px 0"><span class="pill" style="font-size:14px;padding:6px 12px">${esc(m.t)}</span></div>`:`<div style="margin:8px 0;padding:10px 12px;background:var(--soft);border-radius:10px">${m.t.map(([x,s])=>`<div>${esc(x)}${s?` <span class="src">Source: ${esc(s)}</span>`:''}</div>`).join('')}</div>`).join(''):'<span class="k">Ask a question or tap a suggestion to begin.</span>';c.scrollTop=c.scrollHeight}
 function drawDocs(){const p=cur(),q=(document.getElementById('q').value||'').toLowerCase(),c=document.getElementById('cf').value;
  const l=p.docs.filter(d=>(!q||d.title.toLowerCase().includes(q))&&(!c||d.cat==c)).sort((a,b)=>b.date.localeCompare(a.date));
  document.getElementById('dl').innerHTML=l.map(d=>`<div class="row"><div><b>${esc(d.title)}</b><br><span class="k">${esc(d.cat)} · ${fd(d.date)}${d.file?' · '+esc(d.file):''}</span></div><button class="btn ghost sm" data-del="docs:${p.docs.indexOf(d)}">Delete</button></div>`).join('')||'<span class="k">No documents match.</span>'}
@@ -137,6 +179,7 @@ function breakGlass(){const w=document.getElementById('why').value.trim();if(w.l
  const p=cur();log('Emergency access','Opened emergency profile of '+p.name+'. Reason: '+w);
  document.getElementById('emb').innerHTML=`<div class="card crit"><h3>Critical health profile</h3><div class="grid">${[['Blood group',p.blood],['Allergies',p.allergies.join(', ')||'None documented'],['Conditions',p.conditions.map(c=>c.n).join(', ')||'None documented'],['Surgeries',p.surgeries.map(c=>c.n).join(', ')||'None documented'],['Emergency contact',p.ecName+' '+p.ecPhone]].map(([k,v])=>`<div><div class="k">${k}</div><div class="v">${esc(v)}</div></div>`).join('')}</div></div><p class="src">This access was recorded in Access history.</p>`}
 document.addEventListener('click',e=>{
+ const qc=e.target.closest('[data-q]');if(qc){ask(qc.dataset.q);return}
  const dl=e.target.closest('[data-del],#clr,#delp');
  if(dl){
   if(!dl.dataset.arm){dl.dataset.arm='1';dl.dataset.lbl=dl.textContent;dl.textContent='Click again to confirm';setTimeout(()=>{if(dl.isConnected){delete dl.dataset.arm;dl.textContent=dl.dataset.lbl}},4000);return}
@@ -147,6 +190,6 @@ document.addEventListener('click',e=>{
   return}
  const b=e.target.closest('[data-v]');if(b){view=b.dataset.v;render()}
  const r=e.target.closest('[data-rev]');if(r){const a=cur().access[+r.dataset.rev];a.revoked=true;log('You','Revoked access for '+a.who);render();toast('Access revoked')}});
-document.addEventListener('change',e=>{if(e.target.id=='pick'){S.sel=e.target.value;save();render()}});
+document.addEventListener('change',e=>{if(e.target.id=='pick'){S.sel=e.target.value;chat=[];save();render()}});
 render();
 </script></body></html>
