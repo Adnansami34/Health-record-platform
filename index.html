@@ -32,6 +32,7 @@ input:focus,select:focus,textarea:focus,button:focus-visible{outline:2px solid v
 .btn{background:var(--brand);color:var(--brandtxt);border:0;border-radius:8px;padding:9px 16px;font:600 14px inherit;cursor:pointer}
 .btn.ghost{background:none;color:var(--brand);border:1px solid var(--brand)}
 .btn.danger{background:var(--alert);color:#fff}
+.btn.sm{padding:3px 10px;font-size:12px;margin-left:8px}
 .err{color:var(--alert);font-size:12px;margin-top:3px;min-height:0}
 .k{color:var(--mute);font-size:12px}.v{font-weight:500}
 .crit{background:var(--alertbg);border:1px solid var(--alert)}
@@ -100,8 +101,8 @@ function render(){
  <div class="card"><h3>Record summary</h3>${summary(p).map(([t,s])=>`<p style="margin:0 0 6px">${esc(t)} <span class="src">Source: ${s}</span></p>`).join('')}<p class="src">Generated from the entered record. Not a diagnosis or medical advice. Original documents remain the source of truth.</p></div>`}
  if(view=='rec'){h+=`<h2>${esc(p.name)}</h2><p class="sub">Patient ID ${esc(p.id)}</p>
  <div class="card"><div class="grid">${[['Date of birth',fd(p.dob)],['Gender',p.gender],['Mobile',p.mobile||'—'],['Blood group',p.blood],['Emergency contact',p.ecName+(p.ecPhone?' · '+p.ecPhone:'')],['Status','Active']].map(([k,v])=>`<div><div class="k">${k}</div><div class="v">${esc(v)}</div></div>`).join('')}</div></div>
- <div class="card"><h3>Medical history</h3><div class="tl">${[...p.conditions.map(x=>({...x,k:'Condition'})),...p.surgeries.map(x=>({...x,k:'Surgery'}))].sort((a,b)=>(b.d||'').localeCompare(a.d||'')).map(x=>`<div><b>${esc(x.n)}</b> <span class="pill">${x.k}</span><br><span class="k">${fd(x.d)}</span></div>`).join('')||'<span class="k">No history added yet.</span>'}</div>${p.notes?`<p class="k">Notes</p><p>${esc(p.notes)}</p>`:''}</div>
- <button class="btn ghost" data-v="add">Add another patient</button>`}
+ <div class="card"><h3>Medical history</h3><div class="tl">${[...p.conditions.map((x,i)=>({...x,k:'Condition',t:'conditions',i})),...p.surgeries.map((x,i)=>({...x,k:'Surgery',t:'surgeries',i}))].sort((a,b)=>(b.d||'').localeCompare(a.d||'')).map(x=>`<div><b>${esc(x.n)}</b> <span class="pill">${x.k}</span><button class="btn ghost sm" data-del="${x.t}:${x.i}">Delete</button><br><span class="k">${fd(x.d)}</span></div>`).join('')||'<span class="k">No history added yet.</span>'}</div>${p.notes?`<p class="k">Notes</p><p>${esc(p.notes)}</p>`:''}</div>
+ <button class="btn ghost" data-v="add">Add another patient</button> <button class="btn ghost" id="clr">Clear all history</button> <button class="btn danger" id="delp">Delete patient</button>`}
  if(view=='docs'){h+=`<h2>Medical documents</h2><p class="sub">Add a document entry, then search or filter.</p>
  <div class="card"><form id="df" class="grid" novalidate><label>Title *<input name="title"></label><label>Category<select name="cat">${['Laboratory','Imaging','Prescription','Discharge summary','Other'].map(c=>`<option>${c}</option>`).join('')}</select></label><label>Date<input type="date" name="date" value="${today()}" max="${today()}"></label><label>File (optional)<input type="file" name="file"></label><div><button class="btn" type="submit">Add document</button></div></form></div>
  <div class="bar"><input id="q" placeholder="Search documents" style="max-width:260px;margin:0"><select id="cf" style="max-width:200px;margin:0"><option value="">All categories</option>${['Laboratory','Imaging','Prescription','Discharge summary','Other'].map(c=>`<option>${c}</option>`).join('')}</select></div>
@@ -119,7 +120,7 @@ function render(){
 }
 function drawDocs(){const p=cur(),q=(document.getElementById('q').value||'').toLowerCase(),c=document.getElementById('cf').value;
  const l=p.docs.filter(d=>(!q||d.title.toLowerCase().includes(q))&&(!c||d.cat==c)).sort((a,b)=>b.date.localeCompare(a.date));
- document.getElementById('dl').innerHTML=l.map(d=>`<div class="row"><div><b>${esc(d.title)}</b><br><span class="k">${esc(d.cat)} · ${fd(d.date)}${d.file?' · '+esc(d.file):''}</span></div></div>`).join('')||'<span class="k">No documents match.</span>'}
+ document.getElementById('dl').innerHTML=l.map(d=>`<div class="row"><div><b>${esc(d.title)}</b><br><span class="k">${esc(d.cat)} · ${fd(d.date)}${d.file?' · '+esc(d.file):''}</span></div><button class="btn ghost sm" data-del="docs:${p.docs.indexOf(d)}">Delete</button></div>`).join('')||'<span class="k">No documents match.</span>'}
 function addPatient(e){e.preventDefault();const f=e.target,v=n=>f.elements[n].value.trim();let ok=true;
  f.querySelectorAll('.err').forEach(x=>x.textContent='');
  const need=(n,msg)=>{if(!v(n)){f.elements[n].parentElement.querySelector('.err').textContent=msg;ok=false}};
@@ -135,7 +136,16 @@ function grant(e){e.preventDefault();const f=e.target;if(!f.who.value.trim()||!f
 function breakGlass(){const w=document.getElementById('why').value.trim();if(w.length<5){toast('Enter a reason first');return}
  const p=cur();log('Emergency access','Opened emergency profile of '+p.name+'. Reason: '+w);
  document.getElementById('emb').innerHTML=`<div class="card crit"><h3>Critical health profile</h3><div class="grid">${[['Blood group',p.blood],['Allergies',p.allergies.join(', ')||'None documented'],['Conditions',p.conditions.map(c=>c.n).join(', ')||'None documented'],['Surgeries',p.surgeries.map(c=>c.n).join(', ')||'None documented'],['Emergency contact',p.ecName+' '+p.ecPhone]].map(([k,v])=>`<div><div class="k">${k}</div><div class="v">${esc(v)}</div></div>`).join('')}</div></div><p class="src">This access was recorded in Access history.</p>`}
-document.addEventListener('click',e=>{const b=e.target.closest('[data-v]');if(b){view=b.dataset.v;render()}
+document.addEventListener('click',e=>{
+ const dl=e.target.closest('[data-del],#clr,#delp');
+ if(dl){
+  if(!dl.dataset.arm){dl.dataset.arm='1';dl.dataset.lbl=dl.textContent;dl.textContent='Click again to confirm';setTimeout(()=>{if(dl.isConnected){delete dl.dataset.arm;dl.textContent=dl.dataset.lbl}},4000);return}
+  const p=cur();
+  if(dl.id=='delp'){const n=p.name,pid=p.id;S.patients=S.patients.filter(x=>x.id!==pid);S.sel=S.patients[0]?.id||'';log('You','Deleted patient '+n+' ('+pid+')');view=S.patients.length?'dash':'add';render();toast('Patient deleted')}
+  else if(dl.id=='clr'){p.conditions=[];p.surgeries=[];p.allergies=[];p.notes='';p.docs=[];log('You','Cleared all history for '+p.name);render();toast('History cleared')}
+  else{const[t,i]=dl.dataset.del.split(':');const it=p[t][+i];const nm=it.n||it.title;p[t].splice(+i,1);log('You','Deleted “'+nm+'” from '+p.name+'’s record');render();toast('Deleted')}
+  return}
+ const b=e.target.closest('[data-v]');if(b){view=b.dataset.v;render()}
  const r=e.target.closest('[data-rev]');if(r){const a=cur().access[+r.dataset.rev];a.revoked=true;log('You','Revoked access for '+a.who);render();toast('Access revoked')}});
 document.addEventListener('change',e=>{if(e.target.id=='pick'){S.sel=e.target.value;save();render()}});
 render();
